@@ -522,24 +522,77 @@ footer .footer div:first-child {
   padding: 0 35px 38px 35px;
   margin-top: 21px;
 }
-.home .home__about .img-room {
+.home .home__about .img-luxary {
   margin-top: 45px;
   padding: 0 52px;
 }
-.home .home__about .img-room img {
+.home .home__about .img-luxary img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.home .home__about .about__room {
+.home .home__about .about__luxary {
   padding: 0 52px;
   margin-top: -5px;
   text-align: center;
   background: #FFFFFF;
   margin-bottom: 60px;
 }
-.home .home__about .about__room .room {
+.home .home__about .about__luxary .luxary {
   background: #222222;
+  padding-top: 54px;
+}
+.home .home__about .about__luxary .luxary svg {
+  margin-bottom: 30px;
+}
+.home .home__about .about__luxary .luxary h4 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: #FFFFFF;
+  margin-bottom: 21px;
+}
+.home .home__about .about__luxary .luxary p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 0px 36px 39px 36px;
+}
+.home .home__rooms {
+  text-align: center;
+}
+.home .home__rooms span {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.home .home__rooms h2 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+.home .home__rooms .rooms-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 21px;
+  padding: 14px 26px;
+  background: #FFFFFF;
+  margin: 0px 15% 0px 15%;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
 }
 
 /*# sourceMappingURL=styles.css.map */
