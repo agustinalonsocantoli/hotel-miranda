@@ -1,0 +1,173 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+header {
+
+    @include m.desktop {
+        position: relative;
+        background: v.$b2;
+        min-height: 100px;
+    }
+
+    nav{
+        
+        @include m.desktop {
+            max-width: 80%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        h3 {
+            display: none;
+
+            @include m.desktop {
+                display: block;
+                font-family: v.$roboto;
+                font-weight: 300;
+                color: v.$w;
+                font-size: 16px;
+                padding: 11px 0px;
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+            padding: 17px;
+            color: v.$b1;
+            z-index: 50;
+        
+            @include m.desktop {
+                background: v.$w;
+            }
+        
+            .nav__content {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-left: 5px;
+        
+                .nav__logo {
+                    font-family: v.$archivo;
+                    font-weight: 700;
+                    padding: 11px 12px;
+        
+                    background: #FFFFFF;
+                    box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+        
+                    @include m.desktop {
+                        font-size: 40px;
+                        padding: 18px 17px;
+                    }
+                }
+        
+                .nav__title {
+                    font-family: v.$archivo;
+        
+                    h1 {
+                        font-weight: 700;
+                        font-size: 14px;
+        
+                        @include m.desktop {
+                            font-size: 26px;
+                            line-heigth: 28px;
+                        }
+                    }
+        
+                    h1:last-child {
+                        font-weight: 400;
+                        font-size: 14px;
+        
+                        @include m.desktop {
+                            font-size: 26px;
+                            line-heigth: 28px;
+                        }
+                    }
+                }
+        
+                .nav__open {
+                    @include m.desktop {
+                        display: none;
+                    }
+                }
+        
+                .nav__close {
+                    display: none;
+                }
+            
+                .nav__desktop {
+                    display: none;
+        
+                    @include m.desktop {
+                        display: flex;
+        
+                        ul {
+                            display: flex;
+                            gap: 35px;
+                            margin-left: 50px;
+                            margin-right: 10px;
+
+                            li {
+                                font-family: v.$archivo;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 17px;
+                             
+                                a {
+                                    color: v.$b1;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .nav__icons {
+                display: flex;
+                gap: 28px;
+                margin-right: 25px;
+
+                @include m.desktop {
+                    margin-right: 5%;
+
+                    svg {
+                        border: 2px solid rgba(133, 133, 133, 0.3);
+                        min-height: 60px;
+                        min-width: 60px;
+                        padding: 19px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
+        .nav__mobile {
+            display: none;
+            position: absolute;
+            z-index: 9;
+            background: v.$w;
+            width: 100%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+        
+            ul {
+                padding: 32px 0px 2px 21px;
+            }
+        
+            li {
+                margin-bottom: 24px;
+                font-family: v.$archivo;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 17px;
+             
+                a {
+                    color: v.$b1;
+                }   
+            }
+        }
+    }
+}

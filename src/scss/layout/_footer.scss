@@ -1,0 +1,203 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+footer {
+    background-image: url(../img/footer.svg);
+    background-color: #E5E5E5;
+
+    .footer__content {
+        padding: 32px 20px;
+
+        @include m.desktop {
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 100px 5% 50px 5%;
+            gap: 80px;
+        }
+
+        .footer__detail {
+            
+            .detail-logo {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-bottom: 47px;
+
+                .logo {
+                    background: v.$bronw;
+                    padding: 18px 24px;
+
+                    span {
+                        color: v.$w;
+                        font-family: v.$archivo;
+                        font-weight: 700;
+                        font-size: 40px;
+                    }
+                }
+
+                .title {
+
+                    h1 {
+                        font-size: 26px;
+                        font-family: v.$archivo;
+                        line-height: 28px;
+                        letter-spacing: 2px;
+                        color: v.$b1;
+                    }
+                    
+                    h1:first-child {
+                        font-weight: 700;
+                    }
+
+                    h1:last-child {
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            p {
+                font-family: v.$archivo;
+                color: v.$g7;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 40px;
+            }
+
+            .detail-icons {
+                display: flex;
+                gap: 18px;
+                margin-bottom: 32px;
+
+                .icon {
+                    min-height: 40px;
+                    min-width: 40px;
+                    padding: 8px 8px 5px 8px;
+                    background: #E5E5E5;
+
+                    @include m.desktop {
+                        background: #F8F8F8;
+                    }
+
+                    svg {
+                        background: v.$w;
+                    }
+                }
+
+                .icon:nth-child(2) {
+                    background: v.$bronw;
+
+                    svg {
+                        background: v.$bronw;
+                    }
+                }
+            }
+        }
+
+        .footer__services {
+
+            h3 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: 24px;
+                color: v.$b2;
+
+                @include m.desktop {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .services__content {
+                display: flex;
+                gap: 19px;
+                margin-bottom: 32px;
+
+                @include m.desktop {
+                    margin-bottom: 0px;
+                    gap: 70px;
+                }
+                
+                p{
+                    font-family: v.$roboto;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 48px;
+                    color: v.$g7;
+                    margin-bottom: 30px;
+
+                    @include m.desktop {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .footer__contact {
+
+            h3 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: 34px;
+                color: v.$b2;
+            }
+
+            .contact__content {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 59px;
+
+                p {
+                    color: v.$b2;
+                    font-family: v.$old;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                span {
+                    color: v.$g7;
+                    font-family: v.$roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+
+            .contact__content:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .footer {
+        background: #F8F8F8;
+        padding: 16px 20px;
+        
+        @include m.desktop {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        span {
+            font-family: v.$roboto;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        div:first-child {
+            margin-bottom: 24px;
+
+            @include m.desktop {
+                margin: 0px;
+            }
+        }
+    }
+
+}
