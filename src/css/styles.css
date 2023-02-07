@@ -987,6 +987,32 @@ footer .footer div:first-child {
   background: #BEAD8E;
 }
 
+.about__counter .swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 24px;
+}
+.about__counter .swiper-slide {
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__counter .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__counter .swiper-pagination {
+  position: static;
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+.about__counter .swiper-pagination-bullet {
+  background: #BEAD8E;
+}
+
 .about .about__title {
   background: #333333;
   padding: 75px 20px 0px 20px;
@@ -1200,6 +1226,51 @@ footer .footer div:first-child {
   font-size: 16px;
   line-height: 16px;
   color: #777777;
+}
+
+.contact .contact__title {
+  background: #333333;
+  padding: 75px 20px 0px 20px;
+}
+.contact .contact__title h3 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  margin-top: 75px;
+}
+.contact .contact__title h1 {
+  font-family: "Old Standard TT", serif;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 47px;
+}
+.contact .contact__title .contact__box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contact .contact__title .contact__box h4 {
+  background: #FFFFFF;
+  padding: 16px 24px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: -0.48px;
+  color: #222222;
+}
+.contact .contact__title .contact__box h4 span {
+  color: #BEAD8E;
+}
+.contact .contact__title .contact__box h4 strong {
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

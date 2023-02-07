@@ -194,3 +194,36 @@
         background: v.$brown;
     }
 }
+
+.about__counter {
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-top: 24px;
+    }
+
+    .swiper-slide {
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-pagination {
+        position: static;
+        padding-top: 16px;
+        padding-bottom: 60px;
+    }
+    
+    .swiper-pagination-bullet {
+        background: v.$brown;
+    }
+}
