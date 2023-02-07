@@ -116,6 +116,286 @@
             </svg>
         </div>
 
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="src/img/imgGris.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="src/img/imgGris.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="src/img/imgGris.png" />
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="src/img/imgGris.png" />
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="duplex__rooms">
+            <div class="rooms">
+                <h3>Minimal Duplex Room</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+
+                <span>$345<span class="rooms-price">/Night</span></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="home__intro">
+        <div class="intro">
+            <span>Intro video</span>
+
+            <h2>Meet With Our Luxury Place.</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat you have to understand this.
+            </p>
+
+            <button class="btn-desktop">Book Now</button>
+        </div>
+
+        <div class="video">
+            <!-- <iframe src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=85&autoplay=1&mute=1"
+            title="Hotel Miranda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen>
+            </iframe> -->
+            
+            <video src="src/vid/hotel.mp4" type="video/mp4" controls autoplay muted></video>
+        </div>
+
+        <button class="btn-mobile">Book Now</button>
+    </div>
+
+    <div class="home__facilities">
+        
+        <h5>Facilities</h5>
+
+        <h2>Core Features</h2>
+
+        <!-- Swiper -->
+        <div class="swiper DataSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="number" src="src/img/icons/n1.svg" alt="01">
+
+                    <img class="icon" src="src/img/icons/01.svg" alt="Rating">
+
+                    <h4>Have High Rating</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="number" src="src/img/icons/n2.svg" alt="02">
+
+                    <img class="icon" src="src/img/icons/02.svg" alt="quiet hours">
+
+                    <h4>Quiet Hours</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="number" src="src/img/icons/n3.svg" alt="03">
+
+                    <img class="icon" src="src/img/icons/03.svg" alt="Locations">
+
+                    <h4>Best Locations</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="number" src="src/img/icons/n4.svg" alt="04">
+
+                    <img class="icon" src="src/img/icons/04.svg" alt="Cancellation">
+
+                    <h4>Free Cancellation</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="number" src="src/img/icons/n5.svg" alt="05">
+
+                    <img class="icon" src="src/img/icons/05.svg" alt="Payment Options">
+
+                    <h4>Payment Options</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="number" src="src/img/icons/n6.svg" alt="06">
+
+                    <img class="icon" src="src/img/icons/06.svg" alt="Special Offers">
+
+                    <h4>Special Offers</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="icon-dona">
+            <img src="src/img/icons/dona.svg" alt="dona">
+        </div>
+    </div>
+
+    <div class="home__menu">
+
+        <h4>Menu</h4>
+        <h2>Our Foods Menu</h2>
+
+        <div class="page1">
+            <div class="menu__content">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Eggs & Bacon</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Tea or Coffee</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Chia Oatmeal</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="menu__content">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Fruit Parfait</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Marmalade Selection</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Cheese Plate</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-prev"><</button>
+            <button class="btn-next">></button>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper MenuSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="src/img/swiperMenu.png" alt="sMenu">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="src/img/swiperMenu.png" alt="sMenu">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="src/img/swiperMenu.png" alt="sMenu">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="home__follows">
+        <div class="follows">
+            <img src="src/img/icons/rocket.svg" alt="rocket">
+            <h2>84k<span>+</span></h2>
+            <p>Projects are Completed</p>
+        </div>
+
+        <div class="follows">
+            <img src="src/img/icons/people.svg" alt="people">
+            <h2>10M<span>+</span></h2>
+            <p>Active Backers Around World</p>
+        </div>
+
+        <div class="follows">
+            <img src="src/img/icons/finance.svg" alt="finance">
+            <h2>02k<span>+</span></h2>
+            <p>Categories Served</p>
+        </div>
+
+        <div class="follows">
+            <img src="src/img/icons/book.svg" alt="book">
+            <h2>100M<span>+</span></h2>
+            <p>Idea Raised Funds</p>
+        </div>
 
     </div>
 

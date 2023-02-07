@@ -10,13 +10,18 @@ header {
     }
 
     nav{
-        
+        position: fixed;
+        z-index: 190;
+        width: 100%;
+        background: v.$w;
+
         @include m.desktop {
             max-width: 80%;
             position: absolute;
             right: 0;
             left: 0;
             margin: auto;
+            background: none;
         }
 
         h3 {

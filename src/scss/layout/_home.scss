@@ -17,6 +17,7 @@
             text-transform: uppercase;
             max-width: 60%;
             margin-bottom: 40px;
+            margin-top: 75px;
         }
 
         h1 {
@@ -40,7 +41,7 @@
             padding: 22px 48px;
             display: block;
             margin-bottom: 24px;
-            background: v.$bronw;
+            background: v.$brown;
 
             border: 2px solid rgba(255, 255, 255, 0.33);
         }
@@ -71,7 +72,7 @@
             margin-bottom: 30px;
             width: 100%;
             border: none;
-            border-bottom: 2px solid v.$bronw;
+            border-bottom: 2px solid v.$brown;
             background: v.$b2;
             color: #686868;
         }
@@ -87,7 +88,7 @@
             color: v.$w;
             padding: 22px 27px;
             margin-bottom: 24px;
-            background: v.$bronw;
+            background: v.$brown;
 
             border: 2px solid rgba(255, 255, 255, 0.33);
         }
@@ -141,7 +142,7 @@
                 color: v.$w;
                 padding: 22px 56px;
                 margin-bottom: 175px;
-                background: v.$bronw;
+                background: v.$brown;
 
                 border: 2px solid rgba(255, 255, 255, 0.33);
             }
@@ -251,6 +252,7 @@
 
     .home__rooms {
         text-align: center;
+        position: relative;
 
         span {
             font-family: v.$archivo;
@@ -270,7 +272,7 @@
             line-height: 60px;
             letter-spacing: -1.2px;
             color: v.$b2;
-            margin-bottom: 24px;
+            margin-bottom: 50px;
         }
 
         .rooms-icons {
@@ -282,6 +284,267 @@
             background: v.$w;
             margin: 0px 15% 0px 15%;
             box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+            z-index: 85;
+            position: absolute;
+            top: 38%;
+        }
+
+        .duplex__rooms {
+            padding: 0 20px;
+            margin-bottom: 30px;
+            position: absolute;
+            top: 95%;
+            z-index: 87;
+            
+            .rooms {
+                text-align: center;
+                padding: 20px 25px;
+                background: v.$w;
+    
+                h3 {
+                    font-family: v.$old;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 36px;
+                    color: v.$b2;
+                    letter-spacing: -1.2px;
+                    margin-bottom: 13px;
+                }
+    
+                p {
+                    font-family: v.$roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: v.$g7;
+                    margin-bottom: 13px;
+                }
+    
+                span {
+                    font-family: v.$archivo;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 43px;
+                    color: v.$brown;
+    
+                    .rooms-price {
+                        font-size: 13px;
+                        color: v.$brown;
+                        text-transform: capitalize;
+                    }
+                }
+            }   
+        }
+    }
+
+    .home__intro {
+        background: v.$b2;
+        padding: 64px 20px 48px 20px;
+
+        span {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: v.$brown;
+        }
+
+        h2 {
+            margin-top: 32px;
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            color: v.$w;
+            width: 90%;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: v.$archivo;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C2C2C2;
+            margin-bottom: 32px;
+        }
+
+        .btn-desktop {
+            display: none;
+        }
+
+        .video {
+
+            video {
+                width: 100%;
+                min-height: 335px;
+            }
+        }
+
+        .btn-mobile {
+            font-family: v.$archivo;
+            color: v.$w;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            background: v.$brown;
+            padding: 22px 58px;
+            margin-top: 36px;
+            border: none;
+        }
+
+    }
+
+    .home__facilities {
+
+        h5 {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 24px;
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: v.$g7;
+        }
+
+        h2{
+            margin-bottom: 32px;
+            text-align: center;
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            color: v.$b2;
+        }
+
+        .icon-dona {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 60px;
+        }
+    }
+
+    .home__menu {
+        padding: 0 20px;
+
+        h4 {
+            color: v.$g7;
+            text-transform: uppercase;
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: v.$b2;
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            margin-bottom: 32px;
+        }
+
+        .menu__content {
+            display: flex;
+            margin-bottom: 16px;
+            align-items: center;
+            gap: 30px;
+
+            h3 {
+                color: v.$b2;
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: -0.72px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                color: v.$b2;
+                font-family: v.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                width: 90%;
+            }
+
+            .menu__img {
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .buttons {
+            text-align: right;
+            margin-bottom: 60px;
+
+            button {
+                background: v.$brown;
+                box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
+                color: v.$w;
+                padding: 10px 13px;
+                font-size: 15px;
+                border: none;
+            }
+
+            .btn-prev {
+                margin-right: 5px;
+            }
+
+            .btn-next {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .home__follows {
+        background: v.$b2;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .follows {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            h2 {
+                font-family: v.$roboto;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 62px;
+                color: v.$w;
+                margin-top: 16px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                font-family: v.$roboto;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 2px;
+                color: v.$g9;
+            }
         }
     }
 }

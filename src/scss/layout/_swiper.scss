@@ -1,0 +1,128 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.home__rooms {
+
+    .swiper {
+        width: 100%;
+        margin-bottom: 225px;
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            min-width: 300px;
+            height: 250px;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+        
+        .swiper-button-next {
+            background: v.$brown;
+            min-width: 32px;
+            min-height: 32px;
+            padding: 5px 20px;
+            color: v.$w;
+        }
+        
+        .swiper-button-next:after {
+            font-size: 10px;
+        }
+        
+        .swiper-button-prev{
+            background: v.$brown;
+            min-width: 32px;
+            min-height: 32px;
+            padding: 5px 20px;
+            color: v.$w;
+        }
+        
+        .swiper-button-prev:after {
+            font-size: 10px;
+        }
+        
+        .swiper-button-next.swiper-button-disabled, 
+        .swiper-button-prev.swiper-button-disabled {
+            background: v.$w;
+            color: v.$b1;
+            opacity: 1;
+        }
+    }
+}
+
+.home__facilities {
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        min-height: 200px;
+        padding-bottom: 50px;
+
+        .icon, .number {
+            display: block;
+        }
+
+        .number {
+            padding-left: 60%;
+        }
+
+        .icon {
+            margin-top: -30px;
+            margin-bottom: 40px;
+            margin-left: 38px;
+        }
+
+        h4 {
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.9px;
+            color: v.$b2;
+            margin-bottom: 28px;
+            margin-left: 38px;
+        }
+
+        p {
+            font-family: v.$archivo;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: v.$g7;
+            width: 70%;
+            margin-left: 38px;
+        }
+    }
+}
+
+.home__menu {
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .swiper-slide {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+}
