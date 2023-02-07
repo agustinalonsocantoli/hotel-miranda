@@ -99,6 +99,10 @@
             margin-left: 38px;
         }
     }
+
+    .swiper-pagination-bullet {
+        background: v.$brown;
+    }
 }
 
 .home__menu {
@@ -124,5 +128,69 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    }
+    
+    .swiper-pagination-bullet {
+        background: v.$brown;
+    }
+}
+
+.about__facilities {
+    .swiper {
+        width: 90%;
+        height: 100%;
+        background: #292929;
+    }
+    
+    .swiper-slide {
+        font-size: 18px;
+        min-height: 200px;
+        padding-bottom: 50px;
+
+        .icon, .number {
+            display: block;
+        }
+
+        .number {
+            padding-left: 60%;
+        }
+
+        .icon {
+            margin-top: -30px;
+            margin-bottom: 40px;
+            margin-left: 38px;
+        }
+
+        h4 {
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.9px;
+            color: v.$w;
+            margin-bottom: 28px;
+            margin-left: 38px;
+        }
+
+        p {
+            font-family: v.$archivo;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: v.$w;
+            width: 70%;
+            margin-left: 38px;
+        }
+    }
+
+    .swiper-pagination {
+        background: v.$b2;
+        position: static;
+        padding-top: 24px;
+        padding-bottom: 42px;
+    }
+
+    .swiper-pagination-bullet {
+        background: v.$brown;
     }
 }

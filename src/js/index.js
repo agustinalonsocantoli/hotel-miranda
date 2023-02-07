@@ -58,26 +58,26 @@ let page1 = document.querySelector('.page1');
 let page2 = document.querySelector('.page2');
 
 page2.style.display = 'none';
-prev.style.background = '#F8F8F8'
-prev.style.color = '#111111'
+prev.style.background = '#F8F8F8';
+prev.style.color = '#111111';
 
 next.addEventListener('click', () => {
-  page1.style.display = 'none'
+  page1.style.display = 'none';
   page2.style.display = 'block';
-  next.style.background = '#F8F8F8'
-  next.style.color = '#111111'
-  prev.style.background = '#BEAD8E'
-  prev.style.color = '#FFFFFF'
+  next.style.background = '#F8F8F8';
+  next.style.color = '#111111';
+  prev.style.background = '#BEAD8E';
+  prev.style.color = '#FFFFFF';
 
 });
 
 prev.addEventListener('click', () => {
-  page2.style.display = 'none'
+  page2.style.display = 'none';
   page1.style.display = 'block';
-  prev.style.background = '#F8F8F8'
-  prev.style.color = '#111111'
-  next.style.background = '#BEAD8E'
-  next.style.color = '#FFFFFF'
+  prev.style.background = '#F8F8F8';
+  prev.style.color = '#111111';
+  next.style.background = '#BEAD8E';
+  next.style.color = '#FFFFFF';
 
 });
 

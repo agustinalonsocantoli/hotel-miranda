@@ -95,12 +95,17 @@ header {
                 }
         
                 .nav__open {
+                    min-width: 20px;
+                    min-height: 14px;
+
                     @include m.desktop {
                         display: none;
                     }
                 }
         
                 .nav__close {
+                    min-width: 20px;
+                    min-height: 20px;
                     display: none;
                 }
             
