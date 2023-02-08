@@ -306,11 +306,6 @@
 
         .populars__room {
             background: v.$w;
-            position: relative;
-
-            @include m.desktop {
-                position: static;
-            }
 
             .populars-img {
                 margin-bottom: 55px;
@@ -322,6 +317,10 @@
                     object-fit: cover;
                 }
             }
+
+            .swiper__contein{
+                position: relative;
+            }
     
             .rooms-icons {
                 display: flex;
@@ -331,9 +330,10 @@
                 padding: 3% 3%;
                 background: v.$w;
                 box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
-                z-index: 85;
+                z-index: 75;
                 position: absolute;
-                top: 51%;
+                bottom: 0;
+                top: 95%;
                 left: 10.6%;
                 right: 10.6%;
                 margin-left: auto;
