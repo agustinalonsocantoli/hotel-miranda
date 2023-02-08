@@ -37,20 +37,20 @@
                     </div>
 
                     <div class="nav__logo">
-                        <span>H</span>
+                        <span><a href="index.php">H</a></span>
                     </div>
 
                     <div class="nav__title">
-                        <h1>HOTEL</h1>
-                        <h1>MIRANDA</h1>
+                        <h1><a href="index.php">HOTEL</a></h1>
+                        <h1><a href="index.php">MIRANDA</a></h1>
                     </div>
 
                     <div class="nav__desktop">
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Offers</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="rooms-grid.php">Rooms</a></li>
+                            <li><a href="offers.php">Offers</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,10 +69,10 @@
 
             <div class="nav__mobile">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="rooms-grid.php">Rooms</a></li>
+                    <li><a href="offers.php">Offers</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>

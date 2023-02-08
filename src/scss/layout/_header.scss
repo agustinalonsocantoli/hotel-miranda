@@ -60,13 +60,16 @@ header {
                     font-family: v.$archivo;
                     font-weight: 700;
                     padding: 11px 12px;
-        
                     background: #FFFFFF;
                     box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
         
                     @include m.desktop {
                         font-size: 40px;
                         padding: 18px 17px;
+                    }
+
+                    a{
+                        color: v.$b1;
                     }
                 }
         
@@ -80,6 +83,10 @@ header {
                         @include m.desktop {
                             font-size: 26px;
                             line-heigth: 28px;
+                        }
+
+                        a{
+                            color: v.$b1;
                         }
                     }
         
