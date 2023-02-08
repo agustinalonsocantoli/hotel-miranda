@@ -227,3 +227,111 @@
         background: v.$brown;
     }
 }
+
+.rooms-details {
+    .related__rooms {
+        .swiper {
+            width: 100%;
+            margin-bottom: 50px;
+    
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                min-width: 300px;
+                height: 250px;
+            }
+            
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+            }
+            
+            .swiper-button-next {
+                background: v.$brown;
+                min-width: 32px;
+                min-height: 32px;
+                padding: 5px 20px;
+                color: v.$w;
+                right: 0px;
+            }
+            
+            .swiper-button-next:after {
+                font-size: 10px;
+            }
+            
+            .swiper-button-prev{
+                background: v.$brown;
+                min-width: 32px;
+                min-height: 32px;
+                padding: 5px 20px;
+                color: v.$w;
+                left: 0px;
+            }
+            
+            .swiper-button-prev:after {
+                font-size: 10px;
+            }
+            
+            .swiper-button-next.swiper-button-disabled, 
+            .swiper-button-prev.swiper-button-disabled {
+                background: v.$w;
+                color: v.$b1;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.offers { 
+    .populars {
+        .swiper {
+            width: 100%;
+            margin-bottom: 50px;
+    
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                min-width: 300px;
+                height: 250px;
+            }
+            
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+            }
+            
+            .swiper-button-next {
+                background: v.$brown;
+                min-width: 32px;
+                min-height: 32px;
+                padding: 5px 20px;
+                color: v.$w;
+                right: 0px;
+            }
+            
+            .swiper-button-next:after {
+                font-size: 10px;
+            }
+            
+            .swiper-button-prev{
+                background: v.$brown;
+                min-width: 32px;
+                min-height: 32px;
+                padding: 5px 20px;
+                color: v.$w;
+                left: 0px;
+            }
+            
+            .swiper-button-prev:after {
+                font-size: 10px;
+            }
+            
+            .swiper-button-next.swiper-button-disabled, 
+            .swiper-button-prev.swiper-button-disabled {
+                background: v.$w;
+                color: v.$b1;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,272 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.offers {
+
+    .offers__title{
+        background: v.$b3;
+        padding: 75px 20px 0px 20px;
+
+        h3 {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 2.8px;
+            color: v.$w;
+            margin-bottom: 16px;
+            margin-top: 75px;
+        }
+
+        h1 {
+            font-family: v.$old;
+            color: v.$w;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            margin-bottom: 47px;
+        }
+
+        .offers__box {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+
+            h4 {
+                background: v.$w;
+                padding: 16px 24px;
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 17px;
+                letter-spacing: -0.48px;
+                color: v.$b2;
+
+                span {
+                    color: v.$brown;
+                }
+
+                strong {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .offers__rooms {
+        padding: 50px 20px 60px 20px; 
+
+        .offers-room {
+            margin-bottom: 32px;
+            box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+
+            .offers-img {
+                position: relative;
+                margin-bottom: 16px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .real-price {
+                    position: absolute;
+                    bottom: 55px;
+                    right: 15px;
+
+                    font-family: v.$archivo;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 25px;
+                    color: v.$brown;
+
+                    span {
+                        font-size: 11px;
+                    }
+
+                }
+
+                .offers-price {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 15px;
+
+                    font-family: v.$archivo;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 33px;
+                    color: #DE5777;
+
+                    span {
+                        font-size: 11px;
+                    }
+
+                }
+            }
+
+            h5 {
+                padding-left: 20px;
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 15px;
+                letter-spacing: 2.8px;
+                text-transform: uppercase;
+                color: v.$g7;
+                margin-bottom: 12px;
+            }
+
+            h3 {
+                padding-left: 20px;
+                width: 90%;
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -1.44px;
+                color: v.$b2;
+                margin-bottom: 16px;
+            }
+
+            .offers-text {
+                padding: 0 20px;
+                font-family: v.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: v.$g7;
+                margin-bottom: 25px;
+            }
+
+            .offers-list {
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 20px;
+    
+                .items {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-bottom: 17px;
+    
+                    p {
+                        font-family: v.$roboto;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: v.$g7;
+                    }
+                }
+            }
+
+            button {
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 15px;
+                letter-spacing: 2.8px;
+                text-transform: uppercase;
+                padding: 22px 56px;
+                color: v.$w;
+                background: v.$brown;
+                border: none;
+                margin-left: 20px;
+                margin-top: 25px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .populars {
+        background: v.$b2;
+        padding: 50px 20px;
+        margin-bottom: 60px;
+
+        h4 {
+            font-family: v.$archivo;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: v.$brown;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.8px;
+            color: v.$w;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .populars__room {
+            background: v.$w;
+            position: relative;
+    
+            .rooms-icons {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 21px;
+                padding: 14px 26px;
+                background: v.$w;
+                box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+                z-index: 85;
+                position: absolute;
+                top: 51%;
+                margin: 0px 10.6% 0px 10.6%;
+            }
+    
+            h5 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: -0.72px;
+                color: v.$b2;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+    
+            p {
+                font-family: v.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: v.$g7;
+            }
+    
+            .room-price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-top: 15px;
+                padding-bottom: 28px;
+    
+                p {
+                    font-family: v.$archivo;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 17px;
+                    color: #BDBDBD;
+                }
+    
+                .price {
+                    color: v.$brown;
+                }
+            }
+        }
+    }
+
+}
