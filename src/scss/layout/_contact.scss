@@ -54,4 +54,127 @@
             }
         }
     }
+
+    .contact__info {
+
+        .contact {
+            display:flex ;
+            padding: 50px 32px;
+            gap: 30px;
+            align-items: baseline;
+            margin-bottom: 45px;
+
+            h5 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: v.$b2;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: v.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: v.$g7;  
+            }
+        }
+
+        .info-01 {
+            background-image: url(../img/icons/01c.svg);
+            background-repeat: no-repeat;
+            background-position: 85% 100%;
+        }
+
+        .info-02 {
+            background-image: url(../img/icons/02c.svg);
+            background-repeat: no-repeat;
+            background-position: 85% 100%;
+        }
+
+        .info-03 {
+            background-image: url(../img/icons/03c.svg);
+            background-repeat: no-repeat;
+            background-position: 85% 100%;
+        }
+    }
+
+    .contact__img {
+        padding: 25px 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .contact__form {
+        padding: 60px 20px;
+
+        div {
+            position: relative;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            min-height: 65px;
+            margin-bottom: 16px;
+            background: #F8F8F8;
+            border: none;
+            padding-left: 50px;
+            padding-top: 3px;
+
+            font-family: v.$roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: v.$g7;
+            
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+            min-height: 175px;
+            margin-bottom: 36px;
+            background: #F8F8F8;
+            border: none;
+            padding-left: 50px;
+            padding-top: 25px;
+
+            font-family: v.$roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: v.$g7;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            font-family: v.$roboto;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 3.2px;
+            text-transform: uppercase;
+            color: v.$w;
+            background: v.$brown;
+            padding: 20px 100px;
+            border: none;
+        }
+
+        svg {
+            position: absolute;
+            z-index: 99;
+            top: 25px;
+            left: 25px;
+        }
+
+
+    }
 }

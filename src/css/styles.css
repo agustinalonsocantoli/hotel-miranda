@@ -1272,5 +1272,106 @@ footer .footer div:first-child {
 .contact .contact__title .contact__box h4 strong {
   margin: 0 5px;
 }
+.contact .contact__info .contact {
+  display: flex;
+  padding: 50px 32px;
+  gap: 30px;
+  align-items: baseline;
+  margin-bottom: 45px;
+}
+.contact .contact__info .contact h5 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.contact .contact__info .contact p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+.contact .contact__info .info-01 {
+  background-image: url(../img/icons/01c.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 100%;
+}
+.contact .contact__info .info-02 {
+  background-image: url(../img/icons/02c.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 100%;
+}
+.contact .contact__info .info-03 {
+  background-image: url(../img/icons/03c.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 100%;
+}
+.contact .contact__img {
+  padding: 25px 20px;
+}
+.contact .contact__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact .contact__form {
+  padding: 60px 20px;
+}
+.contact .contact__form div {
+  position: relative;
+}
+.contact .contact__form input {
+  display: block;
+  width: 100%;
+  min-height: 65px;
+  margin-bottom: 16px;
+  background: #F8F8F8;
+  border: none;
+  padding-left: 50px;
+  padding-top: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #777777;
+}
+.contact .contact__form textarea {
+  display: block;
+  width: 100%;
+  min-height: 175px;
+  margin-bottom: 36px;
+  background: #F8F8F8;
+  border: none;
+  padding-left: 50px;
+  padding-top: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #777777;
+}
+.contact .contact__form button {
+  display: block;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #BEAD8E;
+  padding: 20px 100px;
+  border: none;
+}
+.contact .contact__form svg {
+  position: absolute;
+  z-index: 99;
+  top: 25px;
+  left: 25px;
+}
 
 /*# sourceMappingURL=styles.css.map */
