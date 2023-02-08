@@ -1324,6 +1324,11 @@ footer .footer div:first-child {
   background: #333333;
   padding: 75px 20px 0px 20px;
 }
+@media (min-width: 1000px) {
+  .contact .contact__title {
+    padding: 100px 15% 0px 15%;
+  }
+}
 .contact .contact__title h3 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -1364,6 +1369,12 @@ footer .footer div:first-child {
 .contact .contact__title .contact__box h4 strong {
   margin: 0 5px;
 }
+@media (min-width: 1000px) {
+  .contact .contact__info {
+    display: flex;
+    padding: 100px 12% 0px 12%;
+  }
+}
 .contact .contact__info .contact {
   display: flex;
   padding: 50px 32px;
@@ -1391,18 +1402,44 @@ footer .footer div:first-child {
   background-repeat: no-repeat;
   background-position: 85% 100%;
 }
+@media (min-width: 1000px) {
+  .contact .contact__info .info-01 {
+    min-width: 370px;
+  }
+}
+@media (min-width: 1000px) {
+  .contact .contact__info .info-01 p {
+    width: 80%;
+  }
+}
 .contact .contact__info .info-02 {
   background-image: url(../img/icons/02c.svg);
   background-repeat: no-repeat;
   background-position: 85% 100%;
+}
+@media (min-width: 1000px) {
+  .contact .contact__info .info-02 {
+    min-width: 370px;
+  }
 }
 .contact .contact__info .info-03 {
   background-image: url(../img/icons/03c.svg);
   background-repeat: no-repeat;
   background-position: 85% 100%;
 }
+@media (min-width: 1000px) {
+  .contact .contact__info .info-03 {
+    min-width: 370px;
+  }
+}
 .contact .contact__img {
   padding: 25px 20px;
+}
+@media (min-width: 1000px) {
+  .contact .contact__img {
+    padding: 0px 20%;
+    margin-bottom: 100px;
+  }
 }
 .contact .contact__img img {
   width: 100%;
@@ -1411,6 +1448,19 @@ footer .footer div:first-child {
 }
 .contact .contact__form {
   padding: 60px 20px;
+}
+@media (min-width: 1000px) {
+  .contact .contact__form {
+    padding: 0px 20%;
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1000px) {
+  .contact .contact__form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 .contact .contact__form div {
   position: relative;
@@ -1430,9 +1480,16 @@ footer .footer div:first-child {
   line-height: 19px;
   color: #777777;
 }
+@media (min-width: 1000px) {
+  .contact .contact__form input {
+    margin-bottom: 0px;
+    width: 92%;
+  }
+}
 .contact .contact__form textarea {
+  resize: none;
   display: block;
-  width: 100%;
+  width: 200%;
   min-height: 175px;
   margin-bottom: 36px;
   background: #F8F8F8;
@@ -1444,6 +1501,11 @@ footer .footer div:first-child {
   font-size: 16px;
   line-height: 19px;
   color: #777777;
+}
+@media (min-width: 1000px) {
+  .contact .contact__form textarea {
+    grid-column: 1/3;
+  }
 }
 .contact .contact__form button {
   display: block;
@@ -1458,6 +1520,11 @@ footer .footer div:first-child {
   background: #BEAD8E;
   padding: 20px 100px;
   border: none;
+}
+@media (min-width: 1000px) {
+  .contact .contact__form button {
+    grid-column: 1/3;
+  }
 }
 .contact .contact__form svg {
   position: absolute;
@@ -1876,6 +1943,11 @@ footer .footer div:first-child {
   background: #333333;
   padding: 75px 20px 0px 20px;
 }
+@media (min-width: 1000px) {
+  .offers .offers__title {
+    padding: 100px 15% 0px 15%;
+  }
+}
 .offers .offers__title h3 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -1919,20 +1991,41 @@ footer .footer div:first-child {
 .offers .offers__rooms {
   padding: 50px 20px 60px 20px;
 }
+@media (min-width: 1000px) {
+  .offers .offers__rooms {
+    padding: 100px 15% 60px 15%;
+  }
+}
 .offers .offers__rooms .offers-room {
   margin-bottom: 32px;
   box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
 }
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room {
+    box-shadow: none;
+  }
+}
 .offers .offers__rooms .offers-room .offers-img {
   position: relative;
   margin-bottom: 16px;
+}
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers-img {
+    margin-bottom: 0px;
+    z-index: -1;
+  }
 }
 .offers .offers__rooms .offers-room .offers-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.offers .offers__rooms .offers-room .offers-img .real-price {
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers-img .offers__rooms-mobile {
+    display: none;
+  }
+}
+.offers .offers__rooms .offers-room .real-price {
   position: absolute;
   bottom: 55px;
   right: 15px;
@@ -1942,10 +2035,15 @@ footer .footer div:first-child {
   line-height: 25px;
   color: #BEAD8E;
 }
-.offers .offers__rooms .offers-room .offers-img .real-price span {
+.offers .offers__rooms .offers-room .real-price span {
   font-size: 11px;
 }
-.offers .offers__rooms .offers-room .offers-img .offers-price {
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .real-price {
+    position: static;
+  }
+}
+.offers .offers__rooms .offers-room .offers-price {
   position: absolute;
   bottom: 20px;
   right: 15px;
@@ -1955,8 +2053,13 @@ footer .footer div:first-child {
   line-height: 33px;
   color: #DE5777;
 }
-.offers .offers__rooms .offers-room .offers-img .offers-price span {
+.offers .offers__rooms .offers-room .offers-price span {
   font-size: 11px;
+}
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers-price {
+    position: static;
+  }
 }
 .offers .offers__rooms .offers-room h5 {
   padding-left: 20px;
@@ -1980,6 +2083,22 @@ footer .footer div:first-child {
   color: #222222;
   margin-bottom: 16px;
 }
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room h3 {
+    grid-column: 1/2;
+  }
+}
+.offers .offers__rooms .offers-room .offers__rooms-desktop {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers__rooms-desktop {
+    display: inline-block;
+    text-align: right;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
 .offers .offers__rooms .offers-room .offers-text {
   padding: 0 20px;
   font-family: "Roboto", sans-serif;
@@ -1989,10 +2108,22 @@ footer .footer div:first-child {
   color: #777777;
   margin-bottom: 25px;
 }
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers-text {
+    padding: 0 10px 0 20px;
+  }
+}
 .offers .offers__rooms .offers-room .offers-list {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
+}
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers-list {
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 0 10px 0 20px;
+  }
 }
 .offers .offers__rooms .offers-room .offers-list .items {
   display: flex;
@@ -2022,10 +2153,48 @@ footer .footer div:first-child {
   margin-top: 25px;
   margin-bottom: 32px;
 }
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room button {
+    width: 65%;
+  }
+}
+@media (min-width: 1000px) {
+  .offers .offers__rooms .offers-room .offers__content {
+    border-top: 6px solid #BEAD8E;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    background: #FFFFFF;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+}
 .offers .populars {
   background: #222222;
   padding: 50px 20px;
   margin-bottom: 60px;
+}
+@media (min-width: 1000px) {
+  .offers .populars {
+    padding: 100px 0 50px 0;
+  }
+}
+@media (min-width: 1000px) {
+  .offers .populars .populars-mobile {
+    display: none;
+  }
+}
+.offers .populars .populars-desktop {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .offers .populars .populars-desktop {
+    display: flex;
+    gap: 30px;
+    padding: 0 15% 0 15%;
+  }
 }
 .offers .populars h4 {
   font-family: "Archivo", sans-serif;
@@ -2052,18 +2221,46 @@ footer .footer div:first-child {
   background: #FFFFFF;
   position: relative;
 }
+@media (min-width: 1000px) {
+  .offers .populars .populars__room {
+    position: static;
+  }
+}
+.offers .populars .populars__room .populars-img {
+  margin-bottom: 55px;
+  position: relative;
+}
+.offers .populars .populars__room .populars-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .offers .populars .populars__room .rooms-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 21px;
-  padding: 14px 26px;
+  gap: 5%;
+  padding: 3% 3%;
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
   z-index: 85;
   position: absolute;
   top: 51%;
-  margin: 0px 10.6% 0px 10.6%;
+  left: 10.6%;
+  right: 10.6%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1000px) {
+  .offers .populars .populars__room .rooms-icons {
+    padding: 6% 6%;
+    bottom: 0;
+    top: 95%;
+    left: 8%;
+    right: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .offers .populars .populars__room h5 {
   font-family: "Old Standard TT", serif;

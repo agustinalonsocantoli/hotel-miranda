@@ -7,6 +7,10 @@
         background: v.$b3;
         padding: 75px 20px 0px 20px;
 
+        @include m.desktop {
+            padding: 100px 15% 0px 15%; 
+        }
+
         h3 {
             font-family: v.$archivo;
             font-weight: 700;
@@ -56,15 +60,28 @@
     }
 
     .offers__rooms {
-        padding: 50px 20px 60px 20px; 
+        padding: 50px 20px 60px 20px;
+
+        @include m.desktop {
+            padding: 100px 15% 60px 15%; 
+        }
 
         .offers-room {
             margin-bottom: 32px;
             box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
 
+            @include m.desktop {
+                box-shadow: none;
+            }
+
             .offers-img {
                 position: relative;
                 margin-bottom: 16px;
+
+                @include m.desktop {
+                    margin-bottom: 0px;
+                    z-index: -1;
+                }
 
                 img {
                     width: 100%;
@@ -72,39 +89,53 @@
                     object-fit: cover;
                 }
 
-                .real-price {
-                    position: absolute;
-                    bottom: 55px;
-                    right: 15px;
+                .offers__rooms-mobile {
+                    @include m.desktop {
+                        display: none;
+                    } 
+                }
+            }
 
-                    font-family: v.$archivo;
-                    font-weight: 700;
-                    font-size: 23px;
-                    line-height: 25px;
-                    color: v.$brown;
+            .real-price {
+                position: absolute;
+                bottom: 55px;
+                right: 15px;
 
-                    span {
-                        font-size: 11px;
-                    }
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 25px;
+                color: v.$brown;
 
+                span {
+                    font-size: 11px;
                 }
 
-                .offers-price {
-                    position: absolute;
-                    bottom: 20px;
-                    right: 15px;
-
-                    font-family: v.$archivo;
-                    font-weight: 700;
-                    font-size: 30px;
-                    line-height: 33px;
-                    color: #DE5777;
-
-                    span {
-                        font-size: 11px;
-                    }
-
+                @include m.desktop {
+                    position: static;
                 }
+
+            }
+
+            .offers-price {
+                position: absolute;
+                bottom: 20px;
+                right: 15px;
+
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 33px;
+                color: #DE5777;
+
+                span {
+                    font-size: 11px;
+                }
+
+                @include m.desktop {
+                    position: static;
+                }
+
             }
 
             h5 {
@@ -117,6 +148,7 @@
                 text-transform: uppercase;
                 color: v.$g7;
                 margin-bottom: 12px;
+                
             }
 
             h3 {
@@ -129,6 +161,21 @@
                 letter-spacing: -1.44px;
                 color: v.$b2;
                 margin-bottom: 16px;
+
+                @include m.desktop {
+                    grid-column: 1/2;
+                }
+            }
+
+            .offers__rooms-desktop {
+                display: none;
+
+                @include m.desktop {
+                    display: inline-block;
+                    text-align: right;
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 3;
+                }
             }
 
             .offers-text {
@@ -139,12 +186,22 @@
                 line-height: 24px;
                 color: v.$g7;
                 margin-bottom: 25px;
+
+                @include m.desktop {
+                    padding: 0 10px 0 20px;
+                }
             }
 
             .offers-list {
                 display: flex;
                 justify-content: space-between;
                 padding: 0px 20px;
+
+                @include m.desktop {
+                    justify-content: flex-end;
+                    gap: 50px;
+                    padding: 0 10px 0 20px;
+                }
     
                 .items {
                     display: flex;
@@ -176,6 +233,25 @@
                 margin-left: 20px;
                 margin-top: 25px;
                 margin-bottom: 32px;
+
+                @include m.desktop {
+                    width: 65%;
+                }
+            }
+
+            .offers__content {
+                @include m.desktop {
+                    border-top: 6px solid v.$brown;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: -50px;
+                    background: v.$w;
+                    padding: 60px;
+
+                    display: grid;
+                    grid-template-columns: 55% 45%;
+                }
             }
         }
     }
@@ -184,6 +260,26 @@
         background: v.$b2;
         padding: 50px 20px;
         margin-bottom: 60px;
+
+        @include m.desktop {
+            padding: 100px 0 50px 0;
+        }
+
+        .populars-mobile {
+            @include m.desktop {
+                display: none;
+            }
+        }
+
+        .populars-desktop {
+            display: none;
+
+            @include m.desktop {
+                display: flex;
+                gap: 30px;
+                padding: 0 15% 0 15%;
+            }
+        }
 
         h4 {
             font-family: v.$archivo;
@@ -211,19 +307,47 @@
         .populars__room {
             background: v.$w;
             position: relative;
+
+            @include m.desktop {
+                position: static;
+            }
+
+            .populars-img {
+                margin-bottom: 55px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
     
             .rooms-icons {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                gap: 21px;
-                padding: 14px 26px;
+                gap: 5%;
+                padding: 3% 3%;
                 background: v.$w;
                 box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
                 z-index: 85;
                 position: absolute;
                 top: 51%;
-                margin: 0px 10.6% 0px 10.6%;
+                left: 10.6%;
+                right: 10.6%;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include m.desktop {
+                    padding: 6% 6%;
+                    bottom: 0;
+                    top: 95%;
+                    left: 8%;
+                    right: 8%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
     
             h5 {
