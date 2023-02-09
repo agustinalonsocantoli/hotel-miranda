@@ -16,7 +16,8 @@
         <label for="departure">LeDeparture Date</label>
         <input type="date" value="2020-03-30" name="departure">
 
-        <button>Check availability</button>
+        <a class="data-desktop" href="rooms-list.php">Check availability</a>
+        <a class="data-mobile" href="rooms-grid.php">Check availability</a>
     </div> 
 
     <div class="home__about">

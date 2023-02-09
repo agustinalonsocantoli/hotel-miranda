@@ -77,8 +77,22 @@
             color: #686868;
         }
 
-        button {
-            display: block;
+        .data-desktop {
+            display: none;
+
+            @include m.desktop {
+                display: inline-block;
+            }
+        }
+
+        .data-mobile {
+            @include m.desktop {
+                display: none;
+            }
+        }
+
+        a {
+            display: inline-block;
             font-family: v.$archivo;
             font-weight: 700;
             font-size: 14px;
@@ -89,8 +103,7 @@
             padding: 22px 27px;
             margin-bottom: 24px;
             background: v.$brown;
-
-            border: 2px solid rgba(255, 255, 255, 0.33);
+            border: none;
         }
     }
 
