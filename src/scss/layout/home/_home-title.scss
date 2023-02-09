@@ -1,0 +1,74 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home {
+
+    .home__title {
+        background: v.$b3;
+        padding: 75px 20px;
+
+        @include m.desktop {
+            padding: 100px 15% 80px 15%; 
+        }
+
+        h3 {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 2.8px;
+            color: v.$w;
+            text-transform: uppercase;
+            max-width: 60%;
+            margin-bottom: 40px;
+            margin-top: 75px;
+        }
+
+        h1 {
+            font-family: v.$old;
+            color: v.$w;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            margin-bottom: 40px;
+
+            @include m.desktop {
+                font-size: 120px;
+                line-height: 130px;
+                letter-spacing: -3.6px;
+                width: 80%;
+            }
+        }
+
+        button {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2.8px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: v.$w;
+            padding: 22px 48px;
+            display: block;
+            margin-bottom: 24px;
+            background: v.$brown;
+
+            border: 2px solid rgba(255, 255, 255, 0.33);
+
+            @include m.desktop {
+                display: inline-block; 
+            }
+        }
+
+        button:last-child {
+            margin-bottom: 0px;
+            background: v.$b3;
+
+            @include m.desktop {
+                margin-left: 30px;
+            }
+        }
+
+    }
+}

@@ -1,60 +1,7 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
 
 .rooms-list {
-
-    .rooms-list__title{
-        background: v.$b3;
-        padding: 100px 15% 0px 15%;
-        margin-bottom: 80px;
-
-        h3 {
-            font-family: v.$archivo;
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 18px;
-            letter-spacing: 2.8px;
-            color: v.$w;
-            margin-bottom: 16px;
-            margin-top: 75px;
-        }
-
-        h1 {
-            font-family: v.$old;
-            color: v.$w;
-            font-weight: 400;
-            font-size: 56px;
-            line-height: 60px;
-            letter-spacing: -1.2px;
-            margin-bottom: 47px;
-        }
-
-        .rooms-list__box {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            
-
-            h4 {
-                background: v.$w;
-                padding: 16px 24px;
-                font-family: v.$archivo;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 17px;
-                letter-spacing: -0.48px;
-                color: v.$b2;
-
-                span {
-                    color: v.$brown;
-                }
-
-                strong {
-                    margin: 0 5px;
-                }
-            }
-        }
-    }
 
     .rooms-list__view {
         padding: 0px 15%;
@@ -141,44 +88,4 @@
             }
         }
     }
-
-    .rooms-list__select {
-        margin-top: 0px;
-        padding: 0 15%;
-        text-align: right;
-        margin-bottom: 50px;
-
-        select {
-            min-height: 65px;
-            background: v.$brown;
-            width: 32%;
-            border: none;
-            font-family: v.$roboto;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: v.$w;
-            padding: 0px 2%;
-        }
-    }
-
-    .rooms-list__pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 100px;
-        margin-top: 60px;
-
-        p {
-            padding: 15px 20px;
-            font-family: v.$archivo;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 19px;
-            text-align: center;
-            color: v.$b2;
-        }
-    }
-
 }

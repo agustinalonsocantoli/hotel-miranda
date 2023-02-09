@@ -1,0 +1,98 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home {
+
+    .home__intro {
+        background: v.$b2;
+        padding: 64px 20px 48px 20px;
+
+        @include m.desktop {
+            background: rgb(34,34,34);
+            background: -moz-linear-gradient(90deg, rgba(34,34,34,1) 70%, rgba(173,157,130,1) 70%);
+            background: -webkit-linear-gradient(90deg, rgba(34,34,34,1) 70%, rgba(173,157,130,1) 70%);
+            background: linear-gradient(90deg, rgba(34,34,34,1) 70%, rgba(173,157,130,1) 70%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222",endColorstr="#ad9d82",GradientType=1);
+            padding: 100px 15%;
+            display: flex;
+            gap: 80px;
+        }
+
+        span {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: v.$brown;
+        }
+
+        h2 {
+            margin-top: 32px;
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            color: v.$w;
+            width: 90%;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: v.$archivo;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C2C2C2;
+            margin-bottom: 32px;
+        }
+
+        .btn-desktop {
+            display: none;
+
+            @include m.desktop {
+                display: block;
+                font-family: v.$archivo;
+                color: v.$w;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 15px;
+                letter-spacing: 2.8px;
+                text-transform: uppercase;
+                background: v.$brown;
+                padding: 15px 45px;
+                margin-top: 36px;
+                border: none;
+            }
+        }
+
+        .video {
+
+            video {
+                width: 100%;
+                min-height: 335px;
+            }
+        }
+
+        .btn-mobile {
+            font-family: v.$archivo;
+            color: v.$w;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            background: v.$brown;
+            padding: 22px 58px;
+            margin-top: 36px;
+            border: none;
+
+            @include m.desktop {
+                display: none;
+            }
+        }
+
+    }
+}

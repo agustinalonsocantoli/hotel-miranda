@@ -1,0 +1,25 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.rooms-details {
+
+    .text {
+        padding: 0 20px;
+        margin-bottom: 60px;
+
+        @include m.desktop {
+            padding: 0 40% 0 15%;
+            margin-top: 60px;
+            margin-bottom: 80px;
+        }
+
+        p {
+            font-family: v.$roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: v.$g7;
+        }
+    }
+}

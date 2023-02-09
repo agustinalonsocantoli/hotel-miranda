@@ -1,0 +1,74 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.contact {
+
+    .contact__info {
+
+        @include m.desktop {
+            display: flex;
+            padding: 100px 12% 0px 12%;
+        }
+
+        .contact {
+            display:flex ;
+            padding: 50px 32px;
+            gap: 30px;
+            align-items: baseline;
+            margin-bottom: 45px;
+
+            h5 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: v.$b2;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: v.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: v.$g7;  
+            }
+        }
+
+        .info-01 {
+            background-image: url(../img/icons/01c.svg);
+            background-repeat: no-repeat;
+            background-position: 85% 100%;
+
+            @include m.desktop {
+                min-width: 370px
+            }
+
+            p {
+                @include m.desktop {
+                    width: 80%;
+                }
+            }
+        }
+
+        .info-02 {
+            background-image: url(../img/icons/02c.svg);
+            background-repeat: no-repeat;
+            background-position: 85% 100%;
+
+            @include m.desktop {
+                min-width: 370px
+            }
+        }
+
+        .info-03 {
+            background-image: url(../img/icons/03c.svg);
+            background-repeat: no-repeat;
+            background-position: 85% 100%;
+
+            @include m.desktop {
+                min-width: 370px
+            }
+        }
+    }
+}

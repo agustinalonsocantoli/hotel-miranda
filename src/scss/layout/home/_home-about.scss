@@ -1,0 +1,265 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home {
+
+    .home__about {
+        margin-top: 60px;
+
+        @include m.desktop {
+            display: grid;
+            padding: 0 0 0 15%;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            grid-template-columns: 20% 20% 60%;
+            grid-template-rows: 50% 50% 10%;
+        }
+        
+        .about__header {
+            background: #F9F9F9;
+            padding: 38px 20px;
+
+            @include m.desktop {
+                padding: 0;
+                padding-left: 60px;
+                padding-right: 15%;
+                grid-column: 3 / 4;
+                grid-row: 1 / 4;
+
+                background: rgb(249,249,249);
+                background: -moz-linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
+                background: -webkit-linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
+                background: linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+            }
+
+            span {
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: 2.8px;
+                text-transform: uppercase;
+                color: v.$g7;
+            }
+
+            h2 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 56px;
+                line-height: 60px;
+                letter-spacing: -1.2px;
+                color: v.$b1;
+                text-transform: capitalize;
+                margin-top: 32px;
+                margin-bottom: 16px;
+
+                @include m.desktop {
+                    font-size: 80px;
+                    line-height: 90px;
+                    letter-spacing: -2.4px;
+                }
+            }
+
+            p {
+                font-family: v.$archivo;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: v.$g7;
+                margin-bottom: 24px;
+
+                @include m.desktop {
+                    padding-right: 35%;
+                }
+            }
+
+            button {
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 2.8px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: v.$w;
+                padding: 22px 56px;
+                margin-bottom: 175px;
+                background: v.$brown;
+                border: none;
+
+                @include m.desktop {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .img-team {
+            padding: 0 52px;
+            margin-top: -115px;
+
+            @include m.desktop {
+                padding: 0;
+                margin: 0;
+                margin-left: 15px;
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .about__team {
+            padding: 0 52px;
+            text-align: center;
+            padding-top: 134px;
+            background: v.$w;
+
+            @include m.desktop {
+                padding: 0px;
+                margin: 0;
+                margin-bottom: 30px;
+                margin-right: 15px;
+                background: #FFFFFF;
+                box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.05);
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                position: relative;
+            }
+
+            .item {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: auto;
+                z-index: 55;
+
+                @include m.desktop {
+                    top: 15%;
+                    right: 42%;
+                    left: 20%;
+                }
+            }
+
+            .sombra {
+                margin-bottom: -25px;
+                margin-left: 126px;
+
+                @include m.desktop {
+                    position: absolute;
+                    right: 0;
+                    top: 15%;
+                    z-index: 50;
+                    margin: 0;
+                }
+            }
+
+            h4 {
+                font-family: v.$old;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 30px;
+                letter-spacing: -0.9px;
+                color: v.$b1;
+
+                @include m.desktop {
+                    margin-top: 120px;
+                    position: relative;
+                    z-index: 57;
+                }
+            }
+
+            p {
+                font-family: v.$roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: v.$b1;
+                padding: 0 35px 38px 35px;
+                margin-top: 21px;
+                
+                @include m.desktop {
+                    margin: 0;
+                    padding: 0 10px;
+                    margin-top: 10px;
+                }
+            }
+
+        }
+
+        .img-luxary {
+            margin-top: 45px;
+            padding: 0 52px;
+
+            @include m.desktop {
+                padding: 0;
+                margin: 0;
+                margin-right: 15px;
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .about__luxary {
+            padding: 0 52px;
+            margin-top: -5px;
+            text-align: center;
+            background: v.$w;
+            margin-bottom: 60px;
+
+            @include m.desktop {
+                padding: 0;
+                margin: 0;
+                margin-left: 15px;
+                margin-top: 30px;
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            
+            .luxary {
+                background: v.$b2;
+                padding-top: 54px;
+
+                @include m.desktop {
+                    padding-top: 40px;
+                }
+                
+                svg {
+                    margin-bottom: 30px;
+                }
+
+                h4 {
+                    font-family: v.$old;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 30px;
+                    letter-spacing: -0.9px;
+                    color: v.$w;
+                    margin-bottom: 21px;
+                }
+
+                p {
+                    font-family: v.$roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: v.$w;
+                    padding: 0px 36px 39px 36px;
+                    
+                    @include m.desktop {
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

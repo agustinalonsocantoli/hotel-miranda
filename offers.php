@@ -97,7 +97,9 @@
                     </div>
                 </div>
 
-                <button>Book Now</button>
+                <div class="btn-offers">
+                    <a href="rooms-details.php">Book Now</a>
+                </div>
             </div>
         </div>
 
@@ -185,7 +187,9 @@
                     </div>
                 </div>
 
-                <button>Book Now</button>
+                <div class="btn-offers">
+                    <a href="rooms-details.php">Book Now</a>
+                </div>
             </div>
         </div>
 
@@ -273,7 +277,9 @@
                     </div>
                 </div>
 
-                <button>Book Now</button>
+                <div class="btn-offers">
+                    <a href="rooms-details.php">Book Now</a>
+                </div>
             </div>
         </div>
 
@@ -361,7 +367,9 @@
                     </div>
                 </div>
 
-                <button>Book Now</button>
+                <div class="btn-offers">
+                    <a href="rooms-details.php">Book Now</a>
+                </div>
             </div>
         </div>
 

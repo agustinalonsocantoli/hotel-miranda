@@ -1,0 +1,46 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home {
+
+    .home__follows {
+        background: v.$b2;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include m.desktop {
+            margin: 0 15%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .follows {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            h2 {
+                font-family: v.$roboto;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 62px;
+                color: v.$w;
+                margin-top: 16px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                font-family: v.$roboto;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 2px;
+                color: v.$g9;
+            }
+        }
+    }
+}

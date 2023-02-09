@@ -1,10 +1,70 @@
+// Header
 @forward './header';
+
+// Footer
 @forward './footer';
-@forward './home';
+
+// Swipers
 @forward './swiper';
-@forward './about';
-@forward './contact';
-@forward './rooms-grid';
-@forward './rooms-details';
-@forward './offers';
-@forward './rooms-list';
+
+// Home
+@forward './home/home-about';
+@forward './home/home-date';
+@forward './home/home-facilities';
+@forward './home/home-follows';
+@forward './home/home-intro';
+@forward './home/home-menu';
+@forward './home/home-rooms';
+@forward './home/home-title';
+
+// About
+@forward './about/about-counter';
+@forward './about/about-facilities';
+@forward './about/about-rest';
+@forward './about/about-services';
+@forward './about/about-title';
+
+// Rooms Grid
+@forward './rooms-grid/grid-title';
+@forward './rooms-grid/grid-view';
+@forward './rooms-grid/grid-others';
+
+// Rooms List
+@forward './rooms-list/list-title';
+@forward './rooms-list/list-view';
+@forward './rooms-list/list-others';
+
+// Rooms Details
+@forward './rooms-details/details-amenities';
+@forward './rooms-details/details-cancel';
+@forward './rooms-details/details-check';
+@forward './rooms-details/details-founder';
+@forward './rooms-details/details-related';
+@forward './rooms-details/details-text';
+@forward './rooms-details/details-title';
+@forward './rooms-details/details';
+
+// Offers
+@forward './offers/offers-title.scss';
+@forward './offers/offers-rooms.scss';
+@forward './offers/offers-populars.scss';
+
+// Contact
+@forward './contact/contact-img';
+@forward './contact/contact-info';
+@forward './contact/contact-title';
+@forward './contact/contact-form';
+
+
+
+
+// @forward './about';
+// @forward './contact';
+// @forward './rooms-grid';
+// @forward './rooms-details';
+// @forward './offers';
+// @forward './rooms-list';
+// @forward './home';
+
+
+

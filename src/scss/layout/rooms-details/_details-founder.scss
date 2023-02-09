@@ -1,0 +1,47 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.rooms-details {
+
+    .founder {
+        text-align: center;
+        padding: 60px 0px 40px 0px;
+
+        @include m.desktop {
+            box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+            margin: 0 60% 0 15%;
+        }
+
+        h3 {
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.9px;
+            color: v.$b2;
+            margin-top: 38px;
+            margin-bottom: 15px;
+        }
+
+        h5 {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: v.$brown;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-family: v.$archivo;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: v.$g7;
+            padding: 0px 26px;
+        }
+    }
+}

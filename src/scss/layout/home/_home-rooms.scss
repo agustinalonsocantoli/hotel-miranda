@@ -1,0 +1,132 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home {
+
+    .home__rooms {
+        text-align: center;
+        position: relative;
+        margin-bottom: 270px;
+
+        @include m.desktop {
+            margin-bottom: 250px;
+        }
+
+        span {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: v.$g7;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: v.$old;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            color: v.$b2;
+            margin-bottom: 50px;
+        }
+
+        .swiper__contein {
+            position: relative;
+        }
+
+        .rooms-icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5%;
+            padding: 4% 4%;
+            background: v.$w;
+            box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+            z-index: 85;
+            position: absolute;
+            bottom: 100%;
+            top: -5%;
+            left: 15%;
+            right: 15%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include m.desktop {
+                padding: 1% 1%;
+                bottom: 100%;
+                top: -3%;
+                left: 40%;
+                right: 40%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .duplex__rooms {
+            padding: 0 20px;
+            position: absolute;
+            top: 95%;
+            z-index: 87;
+            left: 0;
+            right: 0;
+
+            @include m.desktop {
+                top: 92%;
+                left: 30%;
+                right: 30%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .rooms {
+                text-align: center;
+                padding: 20px 25px;
+                background: v.$w;
+
+                @include m.desktop {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    text-align: left;
+                    padding: 15px 15px 0 15px;
+                }
+    
+                h3 {
+                    font-family: v.$old;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 36px;
+                    color: v.$b2;
+                    letter-spacing: -1.2px;
+                    margin-bottom: 13px;
+                }
+    
+                p {
+                    font-family: v.$roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: v.$g7;
+                    margin-bottom: 13px;
+                }
+    
+                span {
+                    font-family: v.$archivo;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 43px;
+                    color: v.$brown;
+    
+                    .rooms-price {
+                        font-size: 13px;
+                        color: v.$brown;
+                        text-transform: capitalize;
+                    }
+                }
+            }   
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.rooms-list {
+
+    .rooms-list__select {
+        margin-top: 0px;
+        padding: 0 15%;
+        text-align: right;
+        margin-bottom: 50px;
+
+        select {
+            min-height: 65px;
+            background: v.$brown;
+            width: 32%;
+            border: none;
+            font-family: v.$roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: v.$w;
+            padding: 0px 2%;
+        }
+    }
+
+    .rooms-list__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 100px;
+        margin-top: 60px;
+
+        p {
+            padding: 15px 20px;
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: v.$b2;
+        }
+    }
+}

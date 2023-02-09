@@ -1,0 +1,62 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.rooms-details {
+    margin-bottom: 75px;
+
+    .rooms-details__title{
+        background: v.$b3;
+        padding: 75px 20px 0px 20px;
+
+        @include m.desktop {
+            padding: 100px 15% 0px 15%; 
+        }
+
+        h3 {
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 2.8px;
+            color: v.$w;
+            margin-bottom: 16px;
+            margin-top: 75px;
+        }
+
+        h1 {
+            font-family: v.$old;
+            color: v.$w;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+            margin-bottom: 47px;
+        }
+
+        .rooms-details__box {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+
+            h4 {
+                background: v.$w;
+                padding: 16px 24px;
+                font-family: v.$archivo;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 17px;
+                letter-spacing: -0.48px;
+                color: v.$b2;
+
+                span {
+                    color: v.$brown;
+                }
+
+                strong {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

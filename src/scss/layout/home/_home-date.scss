@@ -1,0 +1,80 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home {
+
+    .home__date {
+        background: v.$b2;
+        padding: 36px 20px;
+
+        @include m.desktop {
+            display: flex;
+            padding: 40px 15%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .date {
+            @include m.desktop {
+                width: 20%;
+            }
+        }
+
+        label {
+            display: block;
+            font-family: v.$roboto;
+            font-weight: 700;
+            font-size: 16px;
+            color: v.$w;
+            line-height: 19px;
+            margin-bottom: 24px;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid v.$brown;
+            background: v.$b2;
+            color: #686868;
+
+            @include m.desktop {
+                margin-bottom: 0;
+            }
+        }
+
+        .data-desktop {
+            display: none;
+
+            @include m.desktop {
+                display: inline-block;
+            }
+        }
+
+        .data-mobile {
+            @include m.desktop {
+                display: none;
+            }
+        }
+
+        a {
+            display: inline-block;
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2.8px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: v.$w;
+            padding: 22px 27px;
+            margin-bottom: 24px;
+            background: v.$brown;
+            border: none;
+
+            @include m.desktop {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
