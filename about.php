@@ -37,6 +37,11 @@
                 <p>City Guide</p>
             </div>
 
+            <div class="services-desktop">
+                <img src="src/img/icons/bbq.svg" alt="bbq">
+                <p>BBQ Party</p>
+            </div>
+
             <div>
                 <img src="src/img/icons/room.svg" alt="room">
                 <p>Luxury Room</p>
@@ -51,17 +56,19 @@
                 <img src="src/img/imgRes.png" alt="">
             </div>
 
-            <h5>Restaurant</h5>
+            <div class="rest-text">
+                <h5>Restaurant</h5>
 
-            <h4>Get Restaurant Facilities & Many Other More</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
-                do eiusmod tem por incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip.
-            </p>
+                <h4>Get Restaurant Facilities & Many Other More</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                    do eiusmod tem por incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip.
+                </p>
 
-            <button>Take a Tour</button>
+                <button>Take a Tour</button>
+            </div>
         </div>
     </div>
 
@@ -72,7 +79,7 @@
         <h2>Core Features</h2>
 
         <!-- Swiper -->
-        <div class="swiper DataSwiper">
+        <div class="swiper DataSwiper facilities-mobile">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="number" src="src/img/icons/n1b.svg" alt="01b">
@@ -131,6 +138,63 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+            
+        <div class="facilities-desktop">
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n1b.svg" alt="01b">
+
+                <img class="icon" src="src/img/icons/01.svg" alt="Rating">
+
+                <h4>Have High Rating</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n2b.svg" alt="02b">
+
+                <img class="icon" src="src/img/icons/02.svg" alt="quiet hours">
+
+                <h4>Quiet Hours</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n3b.svg" alt="03b">
+
+                <img class="icon" src="src/img/icons/03.svg" alt="Locations">
+
+                <h4>Best Locations</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n4b.svg" alt="04b">
+
+                <img class="icon" src="src/img/icons/04.svg" alt="Cancellation">
+
+                <h4>Free Cancellation</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n5b.svg" alt="05b">
+
+                <img class="icon" src="src/img/icons/05.svg" alt="Payment Options">
+
+                <h4>Payment Options</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n6b.svg" alt="06b">
+
+                <img class="icon" src="src/img/icons/06.svg" alt="Special Offers">
+
+                <h4>Special Offers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="about__counter">
@@ -183,7 +247,7 @@
 
 
         <!-- Swiper -->
-        <div class="swiper MenuSwiper">
+        <div class="swiper MenuSwiper count-mobile">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="src/img/imgCount.png" alt="count">
@@ -198,6 +262,16 @@
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="count-desktop">
+            <div class="count-img">
+                <img src="src/img/imgCount.png" alt="count">
+            </div>
+
+            <div class="count-img">
+                <img src="src/img/imgCount.png" alt="count">
+            </div>
         </div>
     </div>
 
