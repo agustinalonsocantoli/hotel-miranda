@@ -373,6 +373,11 @@ footer .footer div:first-child {
   background: #333333;
   padding: 75px 20px;
 }
+@media (min-width: 1000px) {
+  .home .home__title {
+    padding: 100px 15% 80px 15%;
+  }
+}
 .home .home__title h3 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -394,6 +399,14 @@ footer .footer div:first-child {
   letter-spacing: -1.2px;
   margin-bottom: 40px;
 }
+@media (min-width: 1000px) {
+  .home .home__title h1 {
+    font-size: 120px;
+    line-height: 130px;
+    letter-spacing: -3.6px;
+    width: 80%;
+  }
+}
 .home .home__title button {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -408,13 +421,36 @@ footer .footer div:first-child {
   background: #BEAD8E;
   border: 2px solid rgba(255, 255, 255, 0.33);
 }
+@media (min-width: 1000px) {
+  .home .home__title button {
+    display: inline-block;
+  }
+}
 .home .home__title button:last-child {
   margin-bottom: 0px;
   background: #333333;
 }
+@media (min-width: 1000px) {
+  .home .home__title button:last-child {
+    margin-left: 30px;
+  }
+}
 .home .home__date {
   background: #222222;
   padding: 36px 20px;
+}
+@media (min-width: 1000px) {
+  .home .home__date {
+    display: flex;
+    padding: 40px 15%;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  .home .home__date .date {
+    width: 20%;
+  }
 }
 .home .home__date label {
   display: block;
@@ -433,6 +469,11 @@ footer .footer div:first-child {
   border-bottom: 2px solid #BEAD8E;
   background: #222222;
   color: #686868;
+}
+@media (min-width: 1000px) {
+  .home .home__date input {
+    margin-bottom: 0;
+  }
 }
 .home .home__date .data-desktop {
   display: none;
@@ -461,12 +502,41 @@ footer .footer div:first-child {
   background: #BEAD8E;
   border: none;
 }
+@media (min-width: 1000px) {
+  .home .home__date a {
+    margin-bottom: 0;
+  }
+}
 .home .home__about {
   margin-top: 60px;
+}
+@media (min-width: 1000px) {
+  .home .home__about {
+    display: grid;
+    padding: 0 0 0 15%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 50% 50% 10%;
+  }
 }
 .home .home__about .about__header {
   background: #F9F9F9;
   padding: 38px 20px;
+}
+@media (min-width: 1000px) {
+  .home .home__about .about__header {
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 15%;
+    grid-column: 3/4;
+    grid-row: 1/4;
+    background: rgb(249, 249, 249);
+    background: -moz-linear-gradient(0deg, rgb(249, 249, 249) 90%, rgb(255, 255, 255) 90%);
+    background: -webkit-linear-gradient(0deg, rgb(249, 249, 249) 90%, rgb(255, 255, 255) 90%);
+    background: linear-gradient(0deg, rgb(249, 249, 249) 90%, rgb(255, 255, 255) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+  }
 }
 .home .home__about .about__header span {
   font-family: "Archivo", sans-serif;
@@ -488,6 +558,13 @@ footer .footer div:first-child {
   margin-top: 32px;
   margin-bottom: 16px;
 }
+@media (min-width: 1000px) {
+  .home .home__about .about__header h2 {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2.4px;
+  }
+}
 .home .home__about .about__header p {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -495,6 +572,11 @@ footer .footer div:first-child {
   line-height: 24px;
   color: #777777;
   margin-bottom: 24px;
+}
+@media (min-width: 1000px) {
+  .home .home__about .about__header p {
+    padding-right: 35%;
+  }
 }
 .home .home__about .about__header button {
   font-family: "Archivo", sans-serif;
@@ -507,11 +589,25 @@ footer .footer div:first-child {
   padding: 22px 56px;
   margin-bottom: 175px;
   background: #BEAD8E;
-  border: 2px solid rgba(255, 255, 255, 0.33);
+  border: none;
+}
+@media (min-width: 1000px) {
+  .home .home__about .about__header button {
+    margin-bottom: 0;
+  }
 }
 .home .home__about .img-team {
   padding: 0 52px;
   margin-top: -115px;
+}
+@media (min-width: 1000px) {
+  .home .home__about .img-team {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }
 .home .home__about .img-team img {
   object-fit: cover;
@@ -524,21 +620,47 @@ footer .footer div:first-child {
   padding-top: 134px;
   background: #FFFFFF;
 }
-.home .home__about .about__team .team {
-  box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+@media (min-width: 1000px) {
+  .home .home__about .about__team {
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.05);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+  }
 }
-.home .home__about .about__team .team .item {
+.home .home__about .about__team .item {
   position: absolute;
   right: 0;
   left: 0;
   margin: auto;
-  z-index: 50;
+  z-index: 55;
 }
-.home .home__about .about__team .team .sombra {
+@media (min-width: 1000px) {
+  .home .home__about .about__team .item {
+    top: 15%;
+    right: 42%;
+    left: 20%;
+  }
+}
+.home .home__about .about__team .sombra {
   margin-bottom: -25px;
   margin-left: 126px;
 }
-.home .home__about .about__team .team h4 {
+@media (min-width: 1000px) {
+  .home .home__about .about__team .sombra {
+    position: absolute;
+    right: 0;
+    top: 15%;
+    z-index: 50;
+    margin: 0;
+  }
+}
+.home .home__about .about__team h4 {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 30px;
@@ -546,7 +668,14 @@ footer .footer div:first-child {
   letter-spacing: -0.9px;
   color: #111111;
 }
-.home .home__about .about__team .team p {
+@media (min-width: 1000px) {
+  .home .home__about .about__team h4 {
+    margin-top: 120px;
+    position: relative;
+    z-index: 57;
+  }
+}
+.home .home__about .about__team p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -555,9 +684,25 @@ footer .footer div:first-child {
   padding: 0 35px 38px 35px;
   margin-top: 21px;
 }
+@media (min-width: 1000px) {
+  .home .home__about .about__team p {
+    margin: 0;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+}
 .home .home__about .img-luxary {
   margin-top: 45px;
   padding: 0 52px;
+}
+@media (min-width: 1000px) {
+  .home .home__about .img-luxary {
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 .home .home__about .img-luxary img {
   object-fit: cover;
@@ -571,9 +716,24 @@ footer .footer div:first-child {
   background: #FFFFFF;
   margin-bottom: 60px;
 }
+@media (min-width: 1000px) {
+  .home .home__about .about__luxary {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
 .home .home__about .about__luxary .luxary {
   background: #222222;
   padding-top: 54px;
+}
+@media (min-width: 1000px) {
+  .home .home__about .about__luxary .luxary {
+    padding-top: 40px;
+  }
 }
 .home .home__about .about__luxary .luxary svg {
   margin-bottom: 30px;
@@ -594,6 +754,11 @@ footer .footer div:first-child {
   line-height: 22px;
   color: #FFFFFF;
   padding: 0px 36px 39px 36px;
+}
+@media (min-width: 1000px) {
+  .home .home__about .about__luxary .luxary p {
+    padding-bottom: 40px;
+  }
 }
 .home .home__rooms {
   text-align: center;
