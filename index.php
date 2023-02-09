@@ -126,19 +126,23 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
                     </div>
 
                 </div>
@@ -151,11 +155,13 @@
 
         <div class="duplex__rooms">
             <div class="rooms">
-                <h3>Minimal Duplex Room</h3>
+                <div>
+                    <h3>Minimal Duplex Room</h3>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                </div>
 
                 <span>$345<span class="rooms-price">/Night</span></span>
             </div>
@@ -197,7 +203,7 @@
         <h2>Core Features</h2>
 
         <!-- Swiper -->
-        <div class="swiper DataSwiper">
+        <div class="swiper DataSwiper facilities-mobile">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="number" src="src/img/icons/n1.svg" alt="01">
@@ -260,14 +266,83 @@
         <div class="icon-dona">
             <img src="src/img/icons/dona.svg" alt="dona">
         </div>
+
+        <div class="facilities-desktop">
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n1.svg" alt="01b">
+
+                <img class="icon" src="src/img/icons/01.svg" alt="Rating">
+
+                <h4>Have High Rating</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n2.svg" alt="02b">
+
+                <img class="icon" src="src/img/icons/02.svg" alt="quiet hours">
+
+                <h4>Quiet Hours</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n3.svg" alt="03b">
+
+                <img class="icon" src="src/img/icons/03.svg" alt="Locations">
+
+                <h4>Best Locations</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n4.svg" alt="04b">
+
+                <img class="icon" src="src/img/icons/04.svg" alt="Cancellation">
+
+                <h4>Free Cancellation</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n5.svg" alt="05b">
+
+                <img class="icon" src="src/img/icons/05.svg" alt="Payment Options">
+
+                <h4>Payment Options</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+
+            <div class="facilities-items">
+                <img class="number" src="src/img/icons/n6.svg" alt="06b">
+
+                <img class="icon" src="src/img/icons/06.svg" alt="Special Offers">
+
+                <h4>Special Offers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dona-desktop">
+            <img src="src/img/icons/donaDesk.svg" alt="dona">
     </div>
 
     <div class="home__menu">
+        <div class="menu_title">
+            <div>
+                <h4>Menu</h4>
+                <h2>Our Foods Menu</h2>
+            </div>
+            
 
-        <h4>Menu</h4>
-        <h2>Our Foods Menu</h2>
+            <div class="buttons menu-desktop">
+                <button class="btn-prev_desktop"><</button>
+                <button class="btn-next_desktop">></button>
+            </div>
+        </div>
 
-        <div class="page1">
+        <div class="page1 menu__grid">
             <div class="menu__content">
 
                 <div class="menu__img">
@@ -309,9 +384,57 @@
                     </p>
                 </div>
             </div>
+
+            <div class="menu__content menu-desktop selection">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Hamburger</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+
+                <div class="menu-desktop">
+                    <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.6334 7.11518C31.633 7.11481 31.6327 7.11437 31.6322 7.114L25.1007 0.613996C24.6114 0.127058 23.82 0.128871 23.3329 0.618245C22.8459 1.10756 22.8478 1.899 23.3371 2.386L27.7224 6.74999H1.25C0.559625 6.74999 0 7.30962 0 7.99999C0 8.69037 0.559625 9.24999 1.25 9.24999H27.7223L23.3372 13.614C22.8479 14.101 22.846 14.8924 23.333 15.3817C23.8201 15.8712 24.6116 15.8729 25.1008 15.386L31.6323 8.88599C31.6327 8.88562 31.633 8.88518 31.6334 8.88481C32.123 8.39618 32.1214 7.60218 31.6334 7.11518Z" fill="#BEAD8E"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="menu__content menu-desktop">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Smoothie</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content menu-desktop">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Gnocchi</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div> 
         </div>
 
-        <div class="page2">
+        <div class="page2 menu__grid">
             <div class="menu__content">
 
                 <div class="menu__img">
@@ -353,15 +476,63 @@
                     </p>
                 </div>
             </div>
+
+            <div class="menu__content menu-desktop selection">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Salad</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+
+                <div class="menu-desktop">
+                    <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.6334 7.11518C31.633 7.11481 31.6327 7.11437 31.6322 7.114L25.1007 0.613996C24.6114 0.127058 23.82 0.128871 23.3329 0.618245C22.8459 1.10756 22.8478 1.899 23.3371 2.386L27.7224 6.74999H1.25C0.559625 6.74999 0 7.30962 0 7.99999C0 8.69037 0.559625 9.24999 1.25 9.24999H27.7223L23.3372 13.614C22.8479 14.101 22.846 14.8924 23.333 15.3817C23.8201 15.8712 24.6116 15.8729 25.1008 15.386L31.6323 8.88599C31.6327 8.88562 31.633 8.88518 31.6334 8.88481C32.123 8.39618 32.1214 7.60218 31.6334 7.11518Z" fill="#BEAD8E"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="menu__content menu-desktop">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Chocolate Cake</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content menu-desktop">
+
+                <div class="menu__img">
+                    <img src="src/img/menu.png" alt="menu">
+                </div>
+
+                <div>
+                    <h3>Sandwich</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="buttons">
+        <div class="buttons menu-mobile">
             <button class="btn-prev"><</button>
             <button class="btn-next">></button>
         </div>
 
         <!-- Swiper -->
-        <div class="swiper MenuSwiper">
+        <div class="swiper MenuSwiper menu-mobile">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="src/img/swiperMenu.png" alt="sMenu">
@@ -377,6 +548,21 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+
+        <div class="menu__image menu-desktop">
+            <div class="image">
+                <img src="src/img/swiperMenu.png" alt="sMenu">
+            </div>
+
+            <div class="image">
+                <img src="src/img/swiperMenu.png" alt="sMenu">
+            </div>
+
+            <div class="image">
+                <img src="src/img/swiperMenu.png" alt="sMenu">
+            </div>
+        </div>
+
     </div>
 
     <div class="home__follows">

@@ -12,6 +12,11 @@
             background-size: cover;
             min-width: 300px;
             height: 250px;
+
+            @include m.desktop {
+                width: 600px;
+                height: 500px;
+            }
         }
         
         .swiper-slide img {
@@ -25,6 +30,11 @@
             min-height: 32px;
             padding: 5px 20px;
             color: v.$w;
+
+            @include m.desktop {
+                right: 25%;
+                top: 55%;
+            }
         }
         
         .swiper-button-next:after {
@@ -37,6 +47,11 @@
             min-height: 32px;
             padding: 5px 20px;
             color: v.$w;
+
+            @include m.desktop {
+                left: 25%;
+                top: 55%;
+            }
         }
         
         .swiper-button-prev:after {

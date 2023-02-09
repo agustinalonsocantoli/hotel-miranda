@@ -170,12 +170,14 @@ var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
+    spaceBetween: 40,
+    initialSlide: 2,
     coverflowEffect: {
-      rotate: 50,
+      rotate: 40,
       stretch: 0,
       depth: 100,
       modifier: 1,
-      slideShadows: true,
+      slideShadows: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -201,8 +203,10 @@ var swiperMenu = new Swiper(".MenuSwiper", {
 // Menu Swiper
 
 if(window.location.href.indexOf('index') > -1) {
-  let prev = document.querySelector('.btn-prev');
-  let next = document.querySelector('.btn-next');
+  let responsive = window.innerWidth < 999 ? true : false;
+
+  let prev = responsive ? document.querySelector('.btn-prev') : document.querySelector('.btn-prev_desktop');
+  let next = responsive ? document.querySelector('.btn-next'): document.querySelector('.btn-next_desktop');
   let page1 = document.querySelector('.page1');
   let page2 = document.querySelector('.page2');
 
@@ -212,7 +216,7 @@ if(window.location.href.indexOf('index') > -1) {
 
   next.addEventListener('click', () => {
     page1.style.display = 'none';
-    page2.style.display = 'block';
+    page2.style.display = responsive ? 'block' : 'grid';
     next.style.background = '#F8F8F8';
     next.style.color = '#111111';
     prev.style.background = '#BEAD8E';
@@ -222,7 +226,7 @@ if(window.location.href.indexOf('index') > -1) {
 
   prev.addEventListener('click', () => {
     page2.style.display = 'none';
-    page1.style.display = 'block';
+    page1.style.display = responsive ? 'block' : 'grid';
     prev.style.background = '#F8F8F8';
     prev.style.color = '#111111';
     next.style.background = '#BEAD8E';
