@@ -25,12 +25,22 @@
                 padding-right: 15%;
                 grid-column: 3 / 4;
                 grid-row: 1 / 4;
+                border-radius: 20px;
 
-                background: rgb(249,249,249);
-                background: -moz-linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
-                background: -webkit-linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
-                background: linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+                // background: rgb(249,249,249);
+                // background: -moz-linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
+                // background: -webkit-linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
+                // background: linear-gradient(0deg, rgba(249,249,249,1) 90%, rgba(255,255,255,1) 90%);
+                // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+                background-image: linear-gradient(
+                                                rgba(255, 255, 255, 1),
+                                                rgba(255, 255, 255, 1),
+                                                rgba(255, 255, 255, 0.7), 
+                                                rgba(255, 255, 255, 0.2), 
+                                                rgba(255, 255, 255, 1)),
+                                                url(../img/home/under1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
             span {
