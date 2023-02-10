@@ -1,9 +1,11 @@
 {
+  "homepage":"https://agustinalonsocantoli.github.io/hotel-miranda",
   "name": "hotel-miranda",
   "version": "1.0.0",
   "description": "Web Hotel Miranda",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Agustin Alonso Cantoli",
@@ -11,5 +13,8 @@
   "dependencies": {
     "http-server": "^14.1.1",
     "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
