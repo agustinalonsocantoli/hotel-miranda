@@ -226,7 +226,14 @@ var swiperMenu = new Swiper(".MenuSwiper", {
 
 // Menu Swiper
 
-if(window.location.href.indexOf('index') > -1) {
+// if(window.location.href.indexOf('index') > -1) {
+if(window.location.href.indexOf('about') > -1 === false
+&& window.location.href.indexOf('rooms-grid') > -1 === false
+&& window.location.href.indexOf('offers') > -1 === false
+&& window.location.href.indexOf('contact') > -1 === false
+&& window.location.href.indexOf('rooms-list') > -1 === false
+&& window.location.href.indexOf('rooms-details') > -1 === false
+) {
   let responsive = window.innerWidth < 999 ? true : false;
 
   let prev = responsive ? document.querySelector('.btn-prev') : document.querySelector('.btn-prev_desktop');
