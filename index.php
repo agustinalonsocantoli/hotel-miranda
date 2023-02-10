@@ -44,7 +44,7 @@
         </div>
 
         <div class="img-team"> 
-            <img src="src/img/imgGris.png" alt="imagen">
+            <img src="src/img/home/team.png" alt="team">
         </div>
 
         <div class="about__team">
@@ -64,7 +64,7 @@
         </div>
 
         <div class="img-luxary"> 
-            <img src="src/img/imgGris.png" alt="imagen">
+            <img src="src/img/home/luxary.jpeg" alt="luxary">
         </div>
 
         <div class="about__luxary">
@@ -126,23 +126,23 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        <img src="src/img/room/room10.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        <img src="src/img/room/room8.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        <img src="src/img/room/room7.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        <img src="src/img/room/room9.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        <img src="src/img/room/room5.png" />
                     </div>
 
                 </div>
@@ -346,7 +346,7 @@
             <div class="menu__content">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/egg.jpg" alt="egg">
                 </div>
 
                 <div>
@@ -360,7 +360,7 @@
             <div class="menu__content">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/coffe.jpg" alt="coffee">
                 </div>
 
                 <div>
@@ -374,7 +374,7 @@
             <div class="menu__content">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/chia.jpg" alt="chia">
                 </div>
 
                 <div>
@@ -388,7 +388,7 @@
             <div class="menu__content menu-desktop selection">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/burguer.jpg" alt="hamburger">
                 </div>
 
                 <div>
@@ -408,7 +408,7 @@
             <div class="menu__content menu-desktop">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/smot.jpg" alt="smoothie">
                 </div>
 
                 <div>
@@ -422,7 +422,7 @@
             <div class="menu__content menu-desktop">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/gnochi.jpg" alt="gnocchi">
                 </div>
 
                 <div>
@@ -438,7 +438,7 @@
             <div class="menu__content">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/fruit.jpg" alt="fruit">
                 </div>
 
                 <div>
@@ -452,7 +452,7 @@
             <div class="menu__content">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/mermelada.jpg" alt="marmalade">
                 </div>
 
                 <div>
@@ -466,7 +466,7 @@
             <div class="menu__content">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/cheese.jpg" alt="cheese">
                 </div>
 
                 <div>
@@ -480,7 +480,21 @@
             <div class="menu__content menu-desktop selection">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/cake.jpg" alt="cake">
+                </div>
+
+                <div>
+                    <h3>Chocolate Cake</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu__content menu-desktop">
+
+                <div class="menu__img">
+                    <img src="src/img/menu/salad.jpg" alt="salad">
                 </div>
 
                 <div>
@@ -500,21 +514,7 @@
             <div class="menu__content menu-desktop">
 
                 <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
-                </div>
-
-                <div>
-                    <h3>Chocolate Cake</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
-                </div>
-            </div>
-
-            <div class="menu__content menu-desktop">
-
-                <div class="menu__img">
-                    <img src="src/img/menu.png" alt="menu">
+                    <img src="src/img/menu/sanwich.jpg" alt="sanwich">
                 </div>
 
                 <div>
@@ -535,15 +535,15 @@
         <div class="swiper MenuSwiper menu-mobile">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="src/img/swiperMenu.png" alt="sMenu">
+                    <img src="src/img/menu/salmon.jpg" alt="salmon">
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="src/img/swiperMenu.png" alt="sMenu">
+                    <img src="src/img/menu/paella.jpg" alt="paella">
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="src/img/swiperMenu.png" alt="sMenu">
+                    <img src="src/img/menu/sushi.jpg" alt="sushi">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -551,15 +551,15 @@
 
         <div class="menu__image menu-desktop">
             <div class="image">
-                <img src="src/img/swiperMenu.png" alt="sMenu">
+                <img src="src/img/menu/salmon.jpg" alt="salmon">
             </div>
 
             <div class="image">
-                <img src="src/img/swiperMenu.png" alt="sMenu">
+                <img src="src/img/menu/paella.jpg" alt="paella">
             </div>
 
             <div class="image">
-                <img src="src/img/swiperMenu.png" alt="sMenu">
+                <img src="src/img/menu/sushi.jpg" alt="sushi">
             </div>
         </div>
 

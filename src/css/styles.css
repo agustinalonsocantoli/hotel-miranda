@@ -371,7 +371,7 @@ footer .footer div:first-child {
 
 .home__rooms .swiper {
   width: 100%;
-  margin-bottom: 225px;
+  margin-bottom: 170px;
 }
 .home__rooms .swiper .swiper-slide {
   background-position: center;
@@ -399,7 +399,7 @@ footer .footer div:first-child {
 @media (min-width: 1000px) {
   .home__rooms .swiper .swiper-button-next {
     right: 25%;
-    top: 55%;
+    top: 45%;
   }
 }
 .home__rooms .swiper .swiper-button-next:after {
@@ -415,7 +415,7 @@ footer .footer div:first-child {
 @media (min-width: 1000px) {
   .home__rooms .swiper .swiper-button-prev {
     left: 25%;
-    top: 55%;
+    top: 45%;
   }
 }
 .home__rooms .swiper .swiper-button-prev:after {
@@ -1258,12 +1258,6 @@ footer .footer div:first-child {
     color: #FFFFFF !important;
   }
 }
-@media (min-width: 1000px) {
-  .home .home__menu .selection .menu__img {
-    width: 61%;
-    margin-bottom: -4px;
-  }
-}
 .home .home__menu .menu__content {
   display: flex;
   margin-bottom: 16px;
@@ -1286,6 +1280,10 @@ footer .footer div:first-child {
   font-size: 14px;
   line-height: 15px;
   width: 90%;
+}
+.home .home__menu .menu__content .menu__img {
+  width: 120px;
+  height: 120px;
 }
 .home .home__menu .menu__content .menu__img img {
   width: 100%;
@@ -1334,6 +1332,10 @@ footer .footer div:first-child {
     margin: 100px 0;
   }
 }
+.home .home__menu .menu__image .image {
+  width: 370px;
+  height: 370px;
+}
 @media (min-width: 1000px) {
   .home .home__menu .menu__image .image img {
     object-fit: cover;
@@ -1349,7 +1351,7 @@ footer .footer div:first-child {
 }
 @media (min-width: 1000px) {
   .home .home__rooms {
-    margin-bottom: 250px;
+    margin-bottom: 170px;
   }
 }
 .home .home__rooms span {
@@ -1412,7 +1414,7 @@ footer .footer div:first-child {
 }
 @media (min-width: 1000px) {
   .home .home__rooms .duplex__rooms {
-    top: 92%;
+    top: 80%;
     left: 30%;
     right: 30%;
     margin-left: auto;
@@ -1464,7 +1466,9 @@ footer .footer div:first-child {
 }
 
 .home .home__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/port1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 75px 20px;
 }
 @media (min-width: 1000px) {
@@ -1866,7 +1870,9 @@ footer .footer div:first-child {
 }
 
 .about .about__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 75px 20px 0px 20px;
 }
 @media (min-width: 1000px) {
@@ -1916,7 +1922,9 @@ footer .footer div:first-child {
 }
 
 .rooms-grid .rooms-grid__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 75px 20px 0px 20px;
 }
 @media (min-width: 1000px) {
@@ -2100,7 +2108,9 @@ footer .footer div:first-child {
 }
 
 .rooms-list .rooms-list__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 15% 0px 15%;
   margin-bottom: 80px;
 }
@@ -2473,7 +2483,7 @@ footer .footer div:first-child {
   z-index: 85;
   position: absolute;
   bottom: 0;
-  top: 95%;
+  top: 90%;
   left: 10.6%;
   right: 10.6%;
   margin-left: auto;
@@ -2640,7 +2650,9 @@ footer .footer div:first-child {
   margin-bottom: 75px;
 }
 .rooms-details .rooms-details__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 75px 20px 0px 20px;
 }
 @media (min-width: 1000px) {
@@ -2767,7 +2779,9 @@ footer .footer div:first-child {
 }
 
 .offers .offers__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 75px 20px 0px 20px;
 }
 @media (min-width: 1000px) {
@@ -3074,7 +3088,7 @@ footer .footer div:first-child {
   z-index: 75;
   position: absolute;
   bottom: 0;
-  top: 95%;
+  top: 90%;
   left: 10.6%;
   right: 10.6%;
   margin-left: auto;
@@ -3208,7 +3222,9 @@ footer .footer div:first-child {
 }
 
 .contact .contact__title {
-  background: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 75px 20px 0px 20px;
 }
 @media (min-width: 1000px) {

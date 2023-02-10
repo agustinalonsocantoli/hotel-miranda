@@ -6,144 +6,168 @@ let rooms = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 345,
       available: 'Booking Now',
+      src: 'src/img/room/room1.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 345,
       available: 'Booking Now',
+      src: 'src/img/room/room13.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 345,
       available: 'Booking Now',
+      src: 'src/img/room/room3.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 345,
       available: 'Booking Now',
+      src: 'src/img/room/room8.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 345,
       available: 'Booking Now',
+      src: 'src/img/room/room5.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 345,
       available: 'Booking Now',
+      src: 'src/img/room/room6.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 550,
       available: 'Booking Now',
+      src: 'src/img/room/room7.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 550,
       available: 'Booking Now',
+      src: 'src/img/room/room8.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 550,
       available: 'Booking Now',
+      src: 'src/img/room/room9.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 550,
       available: 'Booking Now',
+      src: 'src/img/room/room10.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 550,
       available: 'Booking Now',
+      src: 'src/img/room/room11.png',
   },
   {
       name: 'Minimal Duplex Room',
       description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
       price: 550,
       available: 'Booking Now',
+      src: 'src/img/room/room12.png',
   },
   {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 645,
     available: 'Booking Now',
+    src: 'src/img/room/room13.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 645,
     available: 'Booking Now',
+    src: 'src/img/room/room1.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: '$645',
     available: 'Booking Now',
+    src: 'src/img/room/room8.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 645,
     available: 'Booking Now',
+    src: 'src/img/room/room3.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 645,
     available: 'Booking Now',
+    src: 'src/img/room/room10.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 645,
     available: 'Booking Now',
+    src: 'src/img/room/room5.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 750,
     available: 'Booking Now',
+    src: 'src/img/room/room6.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 750,
     available: 'Booking Now',
+    src: 'src/img/room/room7.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 750,
     available: 'Booking Now',
+    src: 'src/img/room/room8.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 750,
     available: 'Booking Now',
+    src: 'src/img/room/room9.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 750,
     available: 'Booking Now',
+    src: 'src/img/room/room10.png',
 },
 {
     name: 'Minimal Duplex Room',
     description: 'Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.',
     price: 750,
     available: 'Booking Now',
+    src: 'src/img/room/room11.png',
 },
 ]
 
@@ -252,7 +276,7 @@ if(window.location.href.indexOf('rooms-grid') > -1) {
     
     div.innerHTML = `
             <div class="room-img"> 
-              <img src="src/img/imgCount.png" alt="room" />
+              <img src="${item.src}" alt="room" />
             
               <div class="rooms-icons">
                 <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -353,7 +377,7 @@ if(window.location.href.indexOf('rooms-list') > -1) {
     
     div.innerHTML = `
             <div class="room-list__img"> 
-              <img src="src/img/imgCount.png" alt="room" />
+              <img src="${item.src}" alt="room" />
             </div>
 
             <div class="room-list_content">

@@ -44,7 +44,7 @@
     </div>
 
     <div class="contact__img">
-        <img src="src/img/imgCount.png" alt="img">
+        <img src="src/img/home/maps.png" alt="maps">
     </div>
 
     <div class="contact__form">

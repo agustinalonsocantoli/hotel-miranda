@@ -9,7 +9,7 @@
         margin-bottom: 270px;
 
         @include m.desktop {
-            margin-bottom: 250px;
+            margin-bottom: 170px;
         }
 
         span {
@@ -74,7 +74,7 @@
             right: 0;
 
             @include m.desktop {
-                top: 92%;
+                top: 80%;
                 left: 30%;
                 right: 30%;
                 margin-left: auto;

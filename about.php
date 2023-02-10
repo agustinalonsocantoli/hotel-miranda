@@ -53,7 +53,7 @@
     <div class="about__rest">
         <div class="rest">
             <div class="rest-img">
-                <img src="src/img/imgRes.png" alt="">
+                <img src="src/img/home/rest.jpg" alt="restaurant">
             </div>
 
             <div class="rest-text">
@@ -250,15 +250,15 @@
         <div class="swiper MenuSwiper count-mobile">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="src/img/imgCount.png" alt="count">
+                    <img src="src/img/home/about1.jpg" alt="count">
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="src/img/imgCount.png" alt="count">
+                    <img src="src/img/home/about2.jpg" alt="count">
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="src/img/imgCount.png" alt="count">
+                    <img src="src/img/home/rest.jpg" alt="count">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -266,11 +266,11 @@
 
         <div class="count-desktop">
             <div class="count-img">
-                <img src="src/img/imgCount.png" alt="count">
+                <img src="src/img/home/about1.jpg" alt="count">
             </div>
 
             <div class="count-img">
-                <img src="src/img/imgCount.png" alt="count">
+                <img src="src/img/home/about2.jpg" alt="count">
             </div>
         </div>
     </div>

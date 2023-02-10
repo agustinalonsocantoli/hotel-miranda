@@ -4,7 +4,9 @@
 .about {
 
     .about__title{
-        background: v.$b3;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/lobby.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 75px 20px 0px 20px;
 
         @include m.desktop {

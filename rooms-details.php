@@ -22,7 +22,7 @@
             </div>
         
             <div class="detail-img">
-                <img src="src/img/imgCount.png" alt="img">
+                <img src="src/img/room/room5.png" alt="img">
             </div>
         </div>
 
@@ -192,19 +192,19 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="src/img/room/room7.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="src/img/room/room5.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="src/img/room/room8.png" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="src/img/imgGris.png" />
+                        <img src="src/img/room/room9.png" />
                     </div>
 
                 </div>
@@ -265,7 +265,7 @@
 
                 <div class="related-img">
 
-                    <img src="src/img/imgCount.png" />
+                    <img src="src/img/room/room7.png" />
 
                     <div class="rooms-icons_desktop">
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +317,7 @@
             <div class="related-content">
                 <div class="related-img">
 
-                    <img src="src/img/imgCount.png" />
+                    <img src="src/img/room/room9.png" />
 
                     <div class="rooms-icons_desktop">
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">

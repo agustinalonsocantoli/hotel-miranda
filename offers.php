@@ -15,7 +15,7 @@
 
         <div class="offers-room">
             <div class="offers-img">
-                <img src="src/img/imgOffers.png" alt="img">
+                <img src="src/img/home/offers2.jpg" alt="img">
 
                 <div class="offers__rooms-mobile">
                     <p class="real-price"><del>$500</del><span><del>/Night</del></span></p>
@@ -105,7 +105,7 @@
 
         <div class="offers-room">
             <div class="offers-img">
-                <img src="src/img/imgOffers.png" alt="img">
+                <img src="src/img/home/offers5.jpg" alt="img">
 
                 <div class="offers__rooms-mobile">
                     <p class="real-price"><del>$500</del><span><del>/Night</del></span></p>
@@ -195,7 +195,7 @@
 
         <div class="offers-room">
             <div class="offers-img">
-                <img src="src/img/imgOffers.png" alt="img">
+                <img src="src/img/home/offers7.jpg" alt="img">
 
                 <div class="offers__rooms-mobile">
                     <p class="real-price"><del>$500</del><span><del>/Night</del></span></p>
@@ -285,7 +285,7 @@
 
         <div class="offers-room">
             <div class="offers-img">
-                <img src="src/img/imgOffers.png" alt="img">
+                <img src="src/img/home/offers4.jpg" alt="img">
 
                 <div class="offers__rooms-mobile">
                     <p class="real-price"><del>$500</del><span><del>/Night</del></span></p>
@@ -386,19 +386,19 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <img src="src/img/imgGris.png" />
+                            <img src="src/img/room/room9.png" />
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="src/img/imgGris.png" />
+                            <img src="src/img/room/room8.png" />
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="src/img/imgGris.png" />
+                            <img src="src/img/room/room7.png" />
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="src/img/imgGris.png" />
+                            <img src="src/img/room/room5.png" />
                         </div>
 
                     </div>
@@ -455,7 +455,7 @@
             <div class="populars__room">
 
                 <div class="populars-img">
-                    <img src="src/img/imgGris.png" />
+                    <img src="src/img/home/luxary1.jpg" />
                 
 
                     <div class="rooms-icons">
@@ -505,7 +505,7 @@
             <div class="populars__room">
 
                 <div class="populars-img">
-                    <img src="src/img/imgGris.png" />
+                    <img src="src/img/home/luxary2.jpg" />
                 
 
                     <div class="rooms-icons">
@@ -555,7 +555,7 @@
             <div class="populars__room">
 
                 <div class="populars-img">
-                    <img src="src/img/imgGris.png" />
+                    <img src="src/img/home/luxary5.jpg" />
                 
 
                     <div class="rooms-icons">

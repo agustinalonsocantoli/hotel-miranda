@@ -5,7 +5,7 @@
 
     .swiper {
         width: 100%;
-        margin-bottom: 225px;
+        margin-bottom: 170px;
 
         .swiper-slide {
             background-position: center;
@@ -33,7 +33,7 @@
 
             @include m.desktop {
                 right: 25%;
-                top: 55%;
+                top: 45%;
             }
         }
         
@@ -50,7 +50,7 @@
 
             @include m.desktop {
                 left: 25%;
-                top: 55%;
+                top: 45%;
             }
         }
         

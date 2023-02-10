@@ -67,12 +67,11 @@
             }
 
 
-            .menu__img {
-                @include m.desktop {
-                    width: 61%;
-                    margin-bottom: -4px;
-                }
-            }
+            // .menu__img {
+            //     @include m.desktop {
+            //         width: 61%;
+            //     }
+            // }
         }
 
         .menu__content {
@@ -101,6 +100,8 @@
             }
 
             .menu__img {
+                width: 120px;
+                height: 120px;
 
                 img {
                     width: 100%;
@@ -159,7 +160,8 @@
             }
 
             .image {
-
+                width: 370px;
+                height: 370px;
                 img {
                     @include m.desktop {
                         object-fit: cover;
