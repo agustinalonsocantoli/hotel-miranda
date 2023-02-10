@@ -17,8 +17,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h3>We Make Your Feel Comfortable</h3>
+
+        <h3 id="nav-title">We Make Your Feel Comfortable</h3>
+        <nav id="navegacion">
 
             <div class="nav">
                 <div class="nav__content">

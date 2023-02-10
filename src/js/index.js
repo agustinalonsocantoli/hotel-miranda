@@ -448,3 +448,24 @@ if(window.location.href.indexOf('rooms-list') > -1) {
   divRooms3.style.display = 'none';
   divRooms4.style.display = 'none';
 }
+
+// Scroll 
+
+let responsive = window.innerWidth < 999 ? true : false;
+let oldValue = 0;
+let nav = document.getElementById('navegacion');
+
+if(!responsive) {
+
+  window.addEventListener("scroll", function(){ 
+    let newValue = window.pageYOffset || document.documentElement.scrollTop; 
+ 
+    if (newValue > oldValue) {
+      nav.style.position = 'absolute';
+    } else if (newValue < oldValue) {
+      nav.style.position = 'fixed';
+    } 
+ 
+    oldValue = newValue
+ });
+}
