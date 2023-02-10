@@ -2101,9 +2101,29 @@ footer .footer div:first-child {
   line-height: 19px;
   text-align: center;
   color: #222222;
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   .rooms-grid .rooms-grid__pagination p {
+    padding: 15px 20px;
+  }
+}
+.rooms-grid .rooms-grid__pagination .pagination {
+  display: flex;
+  gap: 10px;
+}
+.rooms-grid .rooms-grid__pagination a {
+  padding: 10px 15px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .rooms-grid .rooms-grid__pagination a {
     padding: 15px 20px;
   }
 }
@@ -2265,6 +2285,21 @@ footer .footer div:first-child {
   line-height: 19px;
   text-align: center;
   color: #222222;
+  cursor: pointer;
+}
+.rooms-list .rooms-list__pagination .pagination {
+  display: flex;
+  gap: 10px;
+}
+.rooms-list .rooms-list__pagination a {
+  padding: 15px 20px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+  cursor: pointer;
 }
 
 .rooms-details .amenities {

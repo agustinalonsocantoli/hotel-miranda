@@ -50,6 +50,27 @@
             line-height: 19px;
             text-align: center;
             color: v.$b2;
+            cursor: pointer;
+
+            @include m.desktop {
+                padding: 15px 20px;
+            }
+        }
+
+        .pagination {
+            display: flex;
+            gap: 10px;
+        }
+
+        a {
+            padding: 10px 15px;
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: v.$b2;
+            cursor: pointer;
 
             @include m.desktop {
                 padding: 15px 20px;

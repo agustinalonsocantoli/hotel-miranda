@@ -39,6 +39,23 @@
             line-height: 19px;
             text-align: center;
             color: v.$b2;
+            cursor: pointer;
+        }
+
+        .pagination {
+            display: flex;
+            gap: 10px;
+        }
+
+        a {
+            padding: 15px 20px;
+            font-family: v.$archivo;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: v.$b2;
+            cursor: pointer;
         }
     }
 }
