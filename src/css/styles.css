@@ -682,11 +682,10 @@ footer .footer div:first-child {
     padding-right: 15%;
     grid-column: 3/4;
     grid-row: 1/4;
-    background: rgb(249, 249, 249);
-    background: -moz-linear-gradient(0deg, rgb(249, 249, 249) 90%, rgb(255, 255, 255) 90%);
-    background: -webkit-linear-gradient(0deg, rgb(249, 249, 249) 90%, rgb(255, 255, 255) 90%);
-    background: linear-gradient(0deg, rgb(249, 249, 249) 90%, rgb(255, 255, 255) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2), rgb(255, 255, 255)), url(../img/home/under1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .home .home__about .about__header span {
@@ -2101,9 +2100,29 @@ footer .footer div:first-child {
   line-height: 19px;
   text-align: center;
   color: #222222;
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   .rooms-grid .rooms-grid__pagination p {
+    padding: 15px 20px;
+  }
+}
+.rooms-grid .rooms-grid__pagination .pagination {
+  display: flex;
+  gap: 10px;
+}
+.rooms-grid .rooms-grid__pagination a {
+  padding: 10px 15px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .rooms-grid .rooms-grid__pagination a {
     padding: 15px 20px;
   }
 }
@@ -2265,6 +2284,21 @@ footer .footer div:first-child {
   line-height: 19px;
   text-align: center;
   color: #222222;
+  cursor: pointer;
+}
+.rooms-list .rooms-list__pagination .pagination {
+  display: flex;
+  gap: 10px;
+}
+.rooms-list .rooms-list__pagination a {
+  padding: 15px 20px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #222222;
+  cursor: pointer;
 }
 
 .rooms-details .amenities {
@@ -3317,7 +3351,7 @@ footer .footer div:first-child {
 .contact .contact__form textarea {
   resize: none;
   display: block;
-  width: 200%;
+  width: 100%;
   min-height: 175px;
   margin-bottom: 36px;
   background: #F8F8F8;
@@ -3333,6 +3367,7 @@ footer .footer div:first-child {
 @media (min-width: 1000px) {
   .contact .contact__form textarea {
     grid-column: 1/3;
+    width: 200%;
   }
 }
 .contact .contact__form button {

@@ -226,7 +226,20 @@ var swiperMenu = new Swiper(".MenuSwiper", {
 
 // Menu Swiper
 
-if(window.location.href.indexOf('index') > -1) {
+// if(window.location.href.indexOf('index') > -1) {
+if(window.location.href.indexOf('about') > -1 === false
+&& window.location.href.indexOf('rooms-grid') > -1 === false
+&& window.location.href.indexOf('offers') > -1 === false
+&& window.location.href.indexOf('contact') > -1 === false
+&& window.location.href.indexOf('rooms-list') > -1 === false
+&& window.location.href.indexOf('rooms-details') > -1 === false
+&& window.location.href.indexOf('rooms-g-2') > -1 === false
+&& window.location.href.indexOf('rooms-g-3') > -1 === false
+&& window.location.href.indexOf('rooms-g-4') > -1 === false
+&& window.location.href.indexOf('rooms-l-2') > -1 === false
+&& window.location.href.indexOf('rooms-l-3') > -1 === false
+&& window.location.href.indexOf('rooms-l-4') > -1 === false
+) {
   let responsive = window.innerWidth < 999 ? true : false;
 
   let prev = responsive ? document.querySelector('.btn-prev') : document.querySelector('.btn-prev_desktop');
@@ -261,7 +274,12 @@ if(window.location.href.indexOf('index') > -1) {
 
 // Mostrar Rooms Grid
 
-if(window.location.href.indexOf('rooms-grid') > -1) {
+if(
+  window.location.href.indexOf('rooms-grid') > -1
+  || window.location.href.indexOf('rooms-g-2') > -1
+  || window.location.href.indexOf('rooms-g-3') > -1
+  || window.location.href.indexOf('rooms-g-4') > -1
+  ) {
 
   let responsive = window.innerWidth < 999 ? true : false;
   let divRooms1 = document.querySelector('.rooms-page1');
@@ -347,23 +365,16 @@ if(window.location.href.indexOf('rooms-grid') > -1) {
     divRooms3.style.display = 'none';
     divRooms4.style.display = 'none';
   }
-
-  let roomPrev = document.querySelector('.btn_room-prev');
-  let roomNext = document.querySelector('.btn_room-next');
-
-  roomNext.addEventListener('click', () => {
-
-  });
-
-  roomPrev.addEventListener('click', () => {
-
-  });
 }
 
 // Mostrar Rooms List
-// Mostrar Rooms
 
-if(window.location.href.indexOf('rooms-list') > -1) {
+if(
+  window.location.href.indexOf('rooms-list') > -1 
+  || window.location.href.indexOf('rooms-l-2') > -1
+  || window.location.href.indexOf('rooms-l-3') > -1
+  || window.location.href.indexOf('rooms-l-4') > -1
+  ) {
 
   let divRooms1 = document.querySelector('.list-page1');
   let divRooms2 = document.querySelector('.list-page2');
@@ -468,4 +479,229 @@ if(!responsive) {
  
     oldValue = newValue
  });
+}
+
+// Pagination Rooms Grid
+
+if(
+  window.location.href.indexOf('about') > -1 === false
+  && window.location.href.indexOf('index') > -1 === false
+  && window.location.href.indexOf('offers') > -1 === false
+  && window.location.href.indexOf('contact') > -1 === false
+  && window.location.href.indexOf('rooms-list') > -1 === false
+  && window.location.href.indexOf('rooms-l-2') > -1 === false
+  && window.location.href.indexOf('rooms-l-3') > -1 === false
+  && window.location.href.indexOf('rooms-l-4') > -1 === false
+  && window.location.href.indexOf('rooms-details') > -1 === false
+) {
+  
+  let pagination = document.querySelector('.rooms-grid__pagination');
+  const div = document.createElement("div");
+  div.className = `pagination`;
+
+  let divRooms1 = document.querySelector('.rooms-page1');
+  let divRooms2 = document.querySelector('.rooms-page2');
+  let divRooms3 = document.querySelector('.rooms-page3');
+  let divRooms4 = document.querySelector('.rooms-page4');
+
+  let toPagePrev = '<p class="btn_room-prev">«</p>'
+  let toPageNext = '<p class="btn_room-next">»</p>'
+
+  if(window.location.href.indexOf('rooms-grid') > -1 === false) {
+      if (window.location.href.indexOf('rooms-g-4') > -1){
+        toPagePrev = '<a class="btn_room-prev" href="rooms-g-3.html">«</a>'
+      } else if(window.location.href.indexOf('rooms-g-3') > -1) {
+        toPagePrev = '<a class="btn_room-prev" href="rooms-g-2.html">«</a>'
+      } else if(window.location.href.indexOf('rooms-g-2') > -1) {
+        toPagePrev = '<a class="btn_room-prev" href="rooms-grid.html">«</a>'
+      } 
+  } else {
+    toPagePrev = '<p class="btn_room-prev">«</p>'
+  }
+
+  if(window.location.href.indexOf('rooms-g-4') > -1 === false) {
+    if (window.location.href.indexOf('rooms-grid') > -1){
+      toPageNext = '<a class="btn_room-next" href="rooms-g-2.html">»</a>'
+    } else if(window.location.href.indexOf('rooms-g-2') > -1) {
+      toPageNext = '<a class="btn_room-next" href="rooms-g-3.html">»</a>'
+    } else if(window.location.href.indexOf('rooms-g-3') > -1) {
+      toPageNext = '<a class="btn_room-next" href="rooms-g-4.html">»</a>'
+    }
+  } else {
+    toPageNext = '<p class="btn_room-next">»</p>'
+  }
+
+  div.innerHTML = `
+        
+        ${toPagePrev}
+        <a class="p1" href="rooms-grid.html">1</a>
+        <a class="p2" href="rooms-g-2.html">2</a>
+        <a class="p3" href="rooms-g-3.html">3</a>
+        <a class="p4" href="rooms-g-4.html">4</a>
+        ${toPageNext}
+  `;
+  pagination.appendChild(div);
+
+  if(window.location.href.indexOf('rooms-grid') > -1) {
+
+    document.querySelector('.p1').style.background = '#BEAD8E';
+    document.querySelector('.p1').style.color = '#FFFFFF';
+    document.querySelector(".btn_room-prev").style.background = '#999999'
+
+  } else if(window.location.href.indexOf('rooms-g-2') > -1) {
+
+    document.querySelector('.p2').style.background = '#BEAD8E';
+    document.querySelector('.p2').style.color = '#FFFFFF';
+
+    if(responsive) {
+      divRooms1.style.display = 'none';
+      divRooms2.style.display = 'grid';
+      divRooms3.style.display = 'none';
+      divRooms4.style.display = 'none';
+    } else {
+      divRooms1.style.display = 'none';
+      divRooms2.style.display = 'none';
+      divRooms3.style.display = 'grid';
+      divRooms4.style.display = 'grid';
+    }
+
+  } else if(window.location.href.indexOf('rooms-g-3') > -1) {
+
+    document.querySelector('.p3').style.background = '#BEAD8E';
+    document.querySelector('.p3').style.color = '#FFFFFF';
+
+    if(responsive) {
+      divRooms1.style.display = 'none';
+      divRooms2.style.display = 'none';
+      divRooms3.style.display = 'grid';
+      divRooms4.style.display = 'none';
+    } else {
+      divRooms1.style.display = 'grid';
+      divRooms2.style.display = 'grid';
+      divRooms3.style.display = 'none';
+      divRooms4.style.display = 'none';
+    }
+
+  } else if(window.location.href.indexOf('rooms-g-4') > -1) {
+
+    document.querySelector('.p4').style.background = '#BEAD8E';
+    document.querySelector('.p4').style.color = '#FFFFFF';
+    document.querySelector(".btn_room-next").style.background = '#999999'
+
+    if(responsive) {
+      divRooms1.style.display = 'none';
+      divRooms2.style.display = 'none';
+      divRooms3.style.display = 'none';
+      divRooms4.style.display = 'grid';
+    } else {
+      divRooms1.style.display = 'none';
+      divRooms2.style.display = 'none';
+      divRooms3.style.display = 'grid';
+      divRooms4.style.display = 'grid';
+    }
+
+  }
+}
+
+// Pagination Rooms List
+
+if(
+  window.location.href.indexOf('about') > -1 === false
+  && window.location.href.indexOf('index') > -1 === false
+  && window.location.href.indexOf('offers') > -1 === false
+  && window.location.href.indexOf('contact') > -1 === false
+  && window.location.href.indexOf('rooms-grid') > -1 === false
+  && window.location.href.indexOf('rooms-g-2') > -1 === false
+  && window.location.href.indexOf('rooms-g-3') > -1 === false
+  && window.location.href.indexOf('rooms-g-4') > -1 === false
+  && window.location.href.indexOf('rooms-details') > -1 === false
+) {
+  
+  let pagination = document.querySelector('.rooms-list__pagination');
+  const div = document.createElement("div");
+  div.className = `pagination`;
+
+  let divRooms1 = document.querySelector('.list-page1');
+  let divRooms2 = document.querySelector('.list-page2');
+  let divRooms3 = document.querySelector('.list-page3');
+  let divRooms4 = document.querySelector('.list-page4');
+
+  let toPagePrev = '<p class="btn_list-prev">«</p>'
+  let toPageNext = '<p class="btn_list-next">»</p>'
+
+  if(window.location.href.indexOf('rooms-list') > -1 === false) {
+      if (window.location.href.indexOf('rooms-l-4') > -1){
+        toPagePrev = '<a class="btn_list-prev" href="rooms-l-3.html">«</a>'
+      } else if(window.location.href.indexOf('rooms-l-3') > -1) {
+        toPagePrev = '<a class="btn_list-prev" href="rooms-l-2.html">«</a>'
+      } else if(window.location.href.indexOf('rooms-l-2') > -1) {
+        toPagePrev = '<a class="btn_list-prev" href="rooms-list.html">«</a>'
+      } 
+  } else {
+    toPagePrev = '<p class="btn_list-prev">«</p>'
+  }
+
+  if(window.location.href.indexOf('rooms-l-4') > -1 === false) {
+    if (window.location.href.indexOf('rooms-list') > -1){
+      toPageNext = '<a class="btn_list-next" href="rooms-l-2.html">»</a>'
+    } else if(window.location.href.indexOf('rooms-l-2') > -1) {
+      toPageNext = '<a class="btn_list-next" href="rooms-l-3.html">»</a>'
+    } else if(window.location.href.indexOf('rooms-l-3') > -1) {
+      toPageNext = '<a class="btn_list-next" href="rooms-l-4.html">»</a>'
+    }
+  } else {
+    toPageNext = '<p class="btn_list-next">»</p>'
+  }
+
+  div.innerHTML = `
+        
+        ${toPagePrev}
+        <a class="p1" href="rooms-list.html">1</a>
+        <a class="p2" href="rooms-l-2.html">2</a>
+        <a class="p3" href="rooms-l-3.html">3</a>
+        <a class="p4" href="rooms-l-4.html">4</a>
+        ${toPageNext}
+  `;
+  pagination.appendChild(div);
+
+  if(window.location.href.indexOf('rooms-list') > -1) {
+
+    document.querySelector('.p1').style.background = '#BEAD8E';
+    document.querySelector('.p1').style.color = '#FFFFFF';
+    document.querySelector(".btn_list-prev").style.background = '#999999'
+
+  } else if(window.location.href.indexOf('rooms-l-2') > -1) {
+
+    document.querySelector('.p2').style.background = '#BEAD8E';
+    document.querySelector('.p2').style.color = '#FFFFFF';
+
+    divRooms1.style.display = 'none';
+    divRooms2.style.display = 'block';
+    divRooms3.style.display = 'none';
+    divRooms4.style.display = 'none';
+ 
+
+  } else if(window.location.href.indexOf('rooms-l-3') > -1) {
+
+    document.querySelector('.p3').style.background = '#BEAD8E';
+    document.querySelector('.p3').style.color = '#FFFFFF';
+
+
+    divRooms1.style.display = 'none';
+    divRooms2.style.display = 'none';
+    divRooms3.style.display = 'block';
+    divRooms4.style.display = 'none';
+   
+
+  } else if(window.location.href.indexOf('rooms-l-4') > -1) {
+
+    document.querySelector('.p4').style.background = '#BEAD8E';
+    document.querySelector('.p4').style.color = '#FFFFFF';
+    document.querySelector(".btn_list-next").style.background = '#999999'
+
+    divRooms1.style.display = 'none';
+    divRooms2.style.display = 'none';
+    divRooms3.style.display = 'none';
+    divRooms4.style.display = 'block';
+  }
 }
